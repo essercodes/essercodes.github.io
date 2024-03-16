@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function MainNav(props) {
 
@@ -15,6 +15,7 @@ function MainNav(props) {
                     </Nav>
                 </Container>
             </Navbar>
+            <Outlet />
         </div>
     )
 }
