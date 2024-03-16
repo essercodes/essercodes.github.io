@@ -1,7 +1,8 @@
 {
+  "homepage": "https://esser.codes",
   "name": "essercodes",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
