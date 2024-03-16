@@ -1,3 +1,13 @@
 #main-outlet {
   margin: 1rem 3rem;
 }
+
+@font-face {
+  font-family: '3DIsometric';
+  src: local('3DIsometic'), url("./fonts/3DIsometric/3DIsometric.ttf") format('truetype');
+}
+
+.title {
+  font-family: '3DIsometric';
+  font-size: 2rem;
+}
