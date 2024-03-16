@@ -7,13 +7,16 @@ function MainNav(props) {
 
     return (
         <div>
-            <Navbar fixed="top">
-                <Navbar.Brand>
+            <Navbar 
+                fixed="top"
+                className="fixed-navbar"
+            >
+                <Navbar.Brand id="nav-logo">
                     <img
                         alt="lightbulb logo"
                         src={bulb}
-                        width="30"
-                        height="30"
+                        width="45"
+                        height="35"
                         className="d-inline-block align-top"
                     />
                 </Navbar.Brand>{<div className="title">Max</div>}
