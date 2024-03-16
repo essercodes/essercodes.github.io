@@ -2,8 +2,8 @@ import React from "react";
 
 function Home(props) {
     return <div>
-        <h1>Max Esser</h1>
-        <sub>max@esser.codes</sub>
+        <h1>https://esser.codes</h1>
+        <sub>Under Construction</sub>
     </div>
 }
 

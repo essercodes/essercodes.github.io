@@ -9,7 +9,8 @@ function Main() {
   return (
       <HashRouter basename="/">
         <Routes>
-          <Route path="/" element={<MainNav/>}>
+          {/* <Route path="/" element={<MainNav/>}> */}
+          <Route path="/">
             <Route index element={<Home/>} />
             <Route path="/about" element={<AboutMe/>} />
             <Route path="/resume" element={<Resume/>} />
