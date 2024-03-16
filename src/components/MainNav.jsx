@@ -15,7 +15,9 @@ function MainNav(props) {
                     </Nav>
                 </Container>
             </Navbar>
-            <Outlet />
+            <div id="main-outlet">
+                <Outlet />
+            </div>
         </div>
     )
 }
