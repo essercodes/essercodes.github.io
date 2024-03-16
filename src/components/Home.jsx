@@ -1,7 +1,7 @@
 import React from "react";
 
 function Home(props) {
-    return <div>
+    return <div style={{position: 'relative'}}>
         <h1>Max Esser</h1>
         <sub>max@esser.codes</sub>
         <div>

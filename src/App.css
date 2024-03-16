@@ -1,3 +1,7 @@
+:root {
+  --bg-color: white;
+}
+
 #main-outlet {
   margin: 1rem 3rem;
 }
@@ -10,4 +14,17 @@
 .title {
   font-family: '3DIsometric';
   font-size: 2rem;
+  padding-left: .1rem;
+}
+
+body {
+  padding-top: 3rem;
+}
+
+.fixed-navbar {
+  background-color: var(--bg-color);
+}
+
+#nav-logo {
+  padding-left: .3rem;
 }
