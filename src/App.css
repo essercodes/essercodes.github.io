@@ -14,17 +14,12 @@
 .title {
   font-family: '3DIsometric';
   font-size: 2rem;
-  padding-left: .1rem;
 }
 
 body {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .fixed-navbar {
   background-color: var(--bg-color);
-}
-
-#nav-logo {
-  padding-left: .3rem;
 }
