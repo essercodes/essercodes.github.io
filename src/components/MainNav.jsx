@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
 import bulb from "/bulb.svg"
 
@@ -7,7 +7,7 @@ function MainNav(props) {
 
 
     return (
-        
+
         <div>
             <Navbar
                 collapseOnSelect
@@ -16,17 +16,26 @@ function MainNav(props) {
                 className="fixed-navbar"
                 variant="blue"
             >
-                    <div className="d-md-none m-l-1 title">Max</div>
-                <Navbar.Brand id="nav-logo">
-                    <img
-                        alt="lightbulb logo"
-                        src={bulb}
-                        width="45"
-                        height="35"
-                    />
+                <div className="mx-3 d-md-none title">Max</div>
+                <Navbar.Brand>
+                    <Container>
+                        <Row className="g-2">
+                            <Col>
+                                <img 
+                                    className="vertical-center"
+                                    alt="lightbulb logo"
+                                    src={bulb}
+                                    width="40"
+                                    height="40"
+                                />
+                            </Col>
+                            <Col>
+                                <div className="d-none d-md-block title vertical-center">Max</div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Navbar.Brand>
-                    <div className="d-none d-md-block title">Max</div>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle className="mx-3" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav>
                         <Nav.Link as={Link} to="/" eventKey={"home"}>Home</Nav.Link>
