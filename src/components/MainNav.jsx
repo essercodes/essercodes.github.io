@@ -5,9 +5,7 @@ import bulb from "/bulb.svg"
 
 function MainNav(props) {
 
-
     return (
-
         <div>
             <Navbar
                 collapseOnSelect
@@ -22,11 +20,12 @@ function MainNav(props) {
                         <Row className="g-2">
                             <Col>
                                 <img 
-                                    className="vertical-center"
+                                    className="vertical-center logo"
                                     alt="lightbulb logo"
                                     src={bulb}
                                     width="40"
                                     height="40"
+                                    color="red"
                                 />
                             </Col>
                             <Col>
