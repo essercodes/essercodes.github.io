@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useContext} from "react"
 import { HashRouter, Routes, Route } from "react-router-dom"
 import Home from "./Home"
 import AboutMe from "./AboutMe"
