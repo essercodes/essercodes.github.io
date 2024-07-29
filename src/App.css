@@ -1,6 +1,6 @@
 :root {
   color-scheme: light dark;
-  --bg-color: light-dark(#FBF1C7, #282828);
+  --bg-color: light-dark(#F2E5BC, #282828);
   --fg-color: light-dark(#3C2836, #EBDBB2);
   --red-pri: #CC241D;
   --red-sec: light-dark(#9D0006, #FB4934);
@@ -37,7 +37,12 @@ body {
 }
 
 .logo {
-  filter: ;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar-toggler {
+  stroke: var(--fg-color);
 }
 
 .title {
