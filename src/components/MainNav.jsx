@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
+import {Navbar, Nav, Container, Row, Col, Button} from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
-import bulb from "/bulb.svg"
+// import bulb from "/bulb.svg"
+import BulbSvg from "/public/bulb.svg?react";
 
 function MainNav(props) {
-
     return (
         <div>
             <Navbar
@@ -19,14 +19,8 @@ function MainNav(props) {
                     <Container>
                         <Row className="g-2">
                             <Col>
-                                <img 
-                                    className="vertical-center logo"
-                                    alt="lightbulb logo"
-                                    src={bulb}
-                                    width="40"
-                                    height="40"
-                                    color="red"
-                                />
+                                {/*<iframe src={bulb} width='100%' height='100%' className="logo"></iframe>*/}
+                                <BulbSvg className="logo"/>
                             </Col>
                             <Col>
                                 <div className="d-none d-md-block title vertical-center">Max</div>
