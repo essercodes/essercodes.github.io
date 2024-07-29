@@ -39,6 +39,8 @@ body {
 .logo {
   height: 2.5rem;
   width: 2.5rem;
+  stroke: var(--fg-color);
+  color: transparent;
 }
 
 .navbar-toggler {
