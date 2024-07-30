@@ -4,7 +4,13 @@ import {Col, Row} from "react-bootstrap";
 function Letters(props) {
     return <Row>
         {props.text.split("").map((char, i) => {
-            return <Col key={props.text + "-" + i} className={['px-0', props.className].join(" ")}>{char}</Col>
+            {
+                if (" " === char) {
+                    return <Col key={props.text + "-" + i} className={[props.className, 'px-2'].join(" ")}>{char}</Col>
+                } else {
+                    return <Col key={props.text + "-" + i} className={[props.className, 'px-0'].join(" ")}>{char}</Col>
+                }
+            }
         })}
     </Row>
 }

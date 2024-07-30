@@ -73,7 +73,7 @@ body
 }
 
 .my-navlink.nav-link {
-    font-family: "3DIsometric";
+    font-family: "3DIsometric", serif;
     font-size:   2.3rem;
 }
 
@@ -84,14 +84,14 @@ body
 
 .my-navlink.nav-link:hover
 {
-    color: var(--green-sec);
-    font-family: "3DIsometricBold";
+    color:       var(--green-sec);
+    font-family: "3DIsometricBold", serif;
 }
 
 .title,
 .my-navlink.nav-link.active
 {
-    font-family: "3DIsometricBold";
+    font-family: "3DIsometricBold", serif;
 }
 
 .title,
@@ -103,6 +103,17 @@ body
 .my-navlink.nav-link:hover.active
 {
     color: var(--aqua-sec);
+}
+
+a.my-navlink > div.row
+{
+    flex-wrap: nowrap;
+}
+
+a.my-navlink > div.row > div.green-letter
+{
+    flex-grow: 0;
+    flex-basis: 0;
 }
 
 .fixed-navbar
