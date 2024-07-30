@@ -21,16 +21,16 @@ function MainNav(props) {
                         </Row>
                     </Container>
                 </Navbar.Brand>
-                <Navbar.Toggle className="mx-3 navbar-toggler" variant="dark" aria-controls="responsive-navbar-nav"/>
+                <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse>
                     <Nav>
-                        <Nav.Link className="my-navlink" as={Link} to="/" eventKey={"home"}>
+                        <Nav.Link className="my-navlink px-4" as={Link} to="/" eventKey={"home"}>
                             <Letters className="green-letter" text="Home"/>
                         </Nav.Link>
-                        <Nav.Link className="my-navlink" as={Link} to="about" eventKey={"about"}>
+                        <Nav.Link className="my-navlink px-4" as={Link} to="about" eventKey={"about"}>
                             <Letters className="green-letter" text="About Me"/>
                         </Nav.Link>
-                        <Nav.Link className="my-navlink" as={Link} to="resume" eventKey={"resume"}>
+                        <Nav.Link className="my-navlink px-4" as={Link} to="resume" eventKey={"resume"}>
                             <Letters className="green-letter" text="Resume"/>
                         </Nav.Link>
                     </Nav>

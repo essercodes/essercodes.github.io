@@ -75,7 +75,6 @@ body
 .my-navlink.nav-link {
     font-family: "3DIsometric";
     font-size:   2.3rem;
-    padding-right: 8rem;
 }
 
 .my-navlink.nav-link:link, .my-navlink.nav-link:visited
