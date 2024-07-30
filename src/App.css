@@ -72,30 +72,36 @@ body
     fill: var(--yellow-sec);
 }
 
-.green-link.nav-link:link, .green-link.nav-link:visited
-{
+.my-navlink.nav-link {
     font-family: "3DIsometric";
     font-size:   2.3rem;
+    padding-right: 8rem;
+}
+
+.my-navlink.nav-link:link, .my-navlink.nav-link:visited
+{
     color: var(--green-pri);
 }
 
-.green-link.nav-link:hover
+.my-navlink.nav-link:hover
 {
     color: var(--green-sec);
     font-family: "3DIsometricBold";
 }
 
-.green-link.nav-link.active
+.title,
+.my-navlink.nav-link.active
 {
     font-family: "3DIsometricBold";
 }
 
-.green-link.nav-link:link.active, .green-link.nav-link:visited.active
+.title,
+.my-navlink.nav-link:link.active, .my-navlink.nav-link:visited.active
 {
     color: var(--aqua-pri);
 }
 
-.green-link.nav-link:hover.active
+.my-navlink.nav-link:hover.active
 {
     color: var(--aqua-sec);
 }
