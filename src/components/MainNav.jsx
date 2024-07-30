@@ -14,7 +14,8 @@ function MainNav(props) {
                 className="fixed-navbar"
                 variant="blue"
             >
-                <Navbar.Brand href="/">
+                <div className="mx-3 d-md-none"><BulbSvg className="logo"/></div>
+                <Navbar.Brand>
                     <Container>
                         <Row className="g-2">
                             <BulbSvg className="logo"/>
