@@ -1,0 +1,69 @@
+/* Gruvbox Color Scheme */
+/* https://github.com/morhetz/gruvbox */
+:root {
+    --red-pri:    #CC241D;
+    --green-pri:  #98971A;
+    --yellow-pri: #D79921;
+    --blue-pri:   #458588;
+    --purple-pri: #B16286;
+    --aqua-pri:   #689D6A;
+    --orange-pri: #D65D0E;
+    --gray-sec:   #928374;
+    --dark0:      #282828;
+    --dark1:      #3C3836;
+    --dark2:      #504945;
+    --dark3:      #665C54;
+    --dark4:      #7C6F64;
+    --light0:     #FBF1C7;
+    --light1:     #EBDBB2;
+    --light2:     #D5C4A1;
+    --light3:     #BDAE93;
+    --light4:     #A89984;
+}
+
+.dark {
+    --bg0_h:      #1D2021;
+    --bg0_s:      #32302F;
+    --bg0:        var(--dark0);  /* bg */
+    --bg1:        var(--dark1);
+    --bg2:        var(--dark2);
+    --bg3:        var(--dark3);
+    --bg4:        var(--dark4);
+    --fg0:        var(--light0);
+    --fg1:        var(--light1);  /* fg */
+    --fg2:        var(--light2);
+    --fg3:        var(--light3);
+    --fg4:        var(--light4);
+    --gray-pri:   #7C6F64;
+    --red-sec:    #FB4934;
+    --green-sec:  #B8BB26;
+    --yellow-sec: #FABD2F;
+    --blue-sec:   #83A598;
+    --purple-sec: #D3869B;
+    --aqua-sec:   #8EC07C;
+    --orange-sec: #FE8019;
+}
+
+.light {
+    --bg0_h:      #F9F5D7;
+    --bg0_s:      #F2E5BC;
+    --bg0:        var(--light0);  /* bg */
+    --bg1:        var(--light1);
+    --bg2:        var(--light2);
+    --bg3:        var(--light3);
+    --bg4:        var(--light4);
+    --fg0:        var(--dark0);
+    --fg1:        var(--dark1);  /* fg */
+    --fg2:        var(--dark2);
+    --fg3:        var(--dark3);
+    --fg4:        var(--dark4);
+    --gray-pri:   #7C6F64;
+    --red-sec:    #9D0006;
+    --green-sec:  #79740E;
+    --yellow-sec: #B57614;
+    --blue-sec:   #076678;
+    --purple-sec: #8F3F71;
+    --aqua-sec:   #427B58;
+    --orange-sec: #AF3A03;
+}
+

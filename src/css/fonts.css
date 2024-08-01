@@ -1,0 +1,20 @@
+/* https://ggbot.itch.io/3d-isometric-font */
+/* This Font Software is licensed under the SIL Open Font License, Version 1.1. */
+@font-face {
+    font-family: "3DIsometric";
+    src:         local("3DIsometic"), url("../fonts/3DIsometric/3DIsometric.ttf") format("truetype");
+}
+
+/* https://ggbot.itch.io/3d-isometric-font */
+/* This Font Software is licensed under the SIL Open Font License, Version 1.1. */
+@font-face {
+    font-family: "3DIsometricBold";
+    src:         local("3DIsometicBold"), url("../fonts/3DIsometric/3DIsometricBold.ttf") format("truetype");
+}
+
+/* https://ggbot.itch.io/3d-isometric-font */
+/* This Font Software is licensed under the SIL Open Font License, Version 1.1. */
+@font-face {
+    font-family: "3DIsometricBlack";
+    src:         local("3DIsometicBlack"), url("../fonts/3DIsometric/3DIsometricBlack.ttf") format("truetype");
+}

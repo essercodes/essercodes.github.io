@@ -1,24 +1,34 @@
-import React from "react";
+import '../css/navbar.css'
+import '../css/logo.css'
+
+import React, {useContext, useEffect, useState} from "react";
 import {Navbar, Nav, Container, Row,} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
 import BulbSvg from "/public/bulb.svg?react";
 import Letters from "./Letters.jsx";
+import ThemeContext from "../contexts/ThemeContext.js";
 
-// noinspection JSUnusedLocalSymbols
-function MainNav(props) {
+function MainNav() {
+    const [theme, setTheme] = useContext(ThemeContext);
+    const themeSwitch = () => setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
+
+    useEffect(() => {document.getElementById("homeButton").click()}, [])
+
     return (
         <div>
             <Navbar
                 collapseOnSelect
                 expand="md"
                 fixed="top"
-                className="fixed-navbar"
+                className={`${theme} fixed-navbar`}
                 variant="blue"
             >
-                <div className="mx-3 d-md-none"><BulbSvg className="logo"/></div>
+                <div onClick={themeSwitch} className="mx-3 d-md-none">
+                    <BulbSvg className="logo"/>
+                </div>
                 <Navbar.Brand>
                     <Container>
-                        <Row className="g-2">
+                        <Row onClick={themeSwitch} className="g-2">
                             <BulbSvg className="logo"/>
                         </Row>
                     </Container>
@@ -26,14 +36,14 @@ function MainNav(props) {
                 <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse>
                     <Nav>
-                        <Nav.Link className="my-navlink px-4" as={Link} to="/" eventKey={"home"}>
-                            <Letters className="green-letter" text="Home"/>
+                        <Nav.Link id="homeButton" className="my-navlink px-4" as={Link} to="/" eventKey={"home"}>
+                            <Letters className="nav-letter" text="Home"/>
                         </Nav.Link>
                         <Nav.Link className="my-navlink px-4" as={Link} to="about" eventKey={"about"}>
-                            <Letters className="green-letter" text="About Me"/>
+                            <Letters className="nav-letter" text="About Me"/>
                         </Nav.Link>
                         <Nav.Link className="my-navlink px-4" as={Link} to="resume" eventKey={"resume"}>
-                            <Letters className="green-letter" text="Resume"/>
+                            <Letters className="nav-letter" text="Resume"/>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
