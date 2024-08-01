@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
+
+import ThemeContext from "../contexts/ThemeContext.js";
 
 function Home(props) {
-    return <div className="main-body">
+    const [theme, setTheme] = useContext(ThemeContext);
+
+    return <div className={`${theme} main-body`}>
         <h1>Max Esser</h1>
         <sub>max@esser.codes</sub>
         <div>

@@ -1,6 +1,7 @@
 /* Gruvbox Color Scheme */
 /* https://github.com/morhetz/gruvbox */
 :root {
+    --bg:         var(--dark0);
     --red-pri:    #CC241D;
     --green-pri:  #98971A;
     --yellow-pri: #D79921;
