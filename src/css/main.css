@@ -2,14 +2,14 @@
     margin: 1rem 3rem;
 }
 
-*.dark {
-    color:            var(--fg1);
-    background-color: var(--bg0_h);
-}
-*.light {
-    color:            var(--fg1);
-    background-color: var(--bg0_h);
-}
+/* *.dark { */
+/*     color:            var(--fg1); */
+/*     background-color: var(--bg0_h); */
+/* } */
+/* *.light { */
+/*     color:            var(--fg1); */
+/*     background-color: var(--bg0_h); */
+/* } */
 
 body {
     padding-top: 3rem;

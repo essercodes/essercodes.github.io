@@ -10,7 +10,15 @@ import ThemeContext from "../contexts/ThemeContext.js";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
-    const themeSwitch = () => setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
+    const themeSwitch = () => {
+        setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
+
+        // Set the root background to light or dark --bg0
+        const app_elem = document.getElementById('App');
+        const bg_color = getComputedStyle(app_elem).getPropertyValue('--bg0');
+        console.log(app_elem, bg_color);
+        document.documentElement.style.setProperty('--bg', bg_color);
+    }
 
     useEffect(() => {document.getElementById("homeButton").click()}, [])
 
