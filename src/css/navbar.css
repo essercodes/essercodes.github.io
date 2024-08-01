@@ -1,0 +1,43 @@
+.fixed-navbar {
+    color:            var(--fg1);
+    background-color: var(--bg0_h);
+    height:           4rem;
+}
+
+.my-navlink.nav-link {
+    font-family: "3DIsometric", serif;
+    font-size:   2.3rem;
+}
+
+.title,
+.my-navlink.nav-link:hover,
+.my-navlink.nav-link.active {
+    font-family: "3DIsometricBold", serif;
+}
+
+.my-navlink.nav-link:hover {
+    color:       var(--green-sec);
+}
+
+.my-navlink.nav-link:link *, .my-navlink.nav-link:visited * {
+    color: var(--green-pri);
+}
+
+.title,
+.my-navlink.nav-link:link.active *, .my-navlink.nav-link:visited.active * {
+    color: var(--aqua-pri);
+}
+
+.my-navlink.nav-link:hover.active * {
+    color: var(--aqua-sec);
+}
+
+/* Keep words from wrapping, letters are individual elements */
+a.my-navlink > div.row {
+    flex-wrap: nowrap;
+}
+
+a.my-navlink > div.row > div.nav-letter {
+    flex-grow:  0;
+    flex-basis: 0;
+}

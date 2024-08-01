@@ -1,0 +1,21 @@
+.logo {
+    height: 2.5rem;
+    width:  2.5rem;
+}
+
+.light .logo {
+    stroke: var(--gray-pri);
+    fill:   #FABD2F;
+}
+
+.light .logo:hover {
+    fill: none;
+}
+
+.dark .logo {
+    stroke:   #FABD2F;
+}
+.dark .logo:hover {
+    fill:   #FABD2F;
+}
+
