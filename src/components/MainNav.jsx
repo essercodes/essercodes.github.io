@@ -1,9 +1,10 @@
-import React, {useState} from "react";
-import {Navbar, Nav, Container, Row, Col, Button} from "react-bootstrap";
+import React from "react";
+import {Navbar, Nav, Container, Row,} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
 import BulbSvg from "/public/bulb.svg?react";
 import Letters from "./Letters.jsx";
 
+// noinspection JSUnusedLocalSymbols
 function MainNav(props) {
     return (
         <div>
