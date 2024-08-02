@@ -35,9 +35,9 @@ function MainNav() {
                     {/*Hidden only on sm*/}
                     <BulbSvg className="logo"/>
                 </div>
-                <Navbar.Brand>
+                <Navbar.Brand className="d-none d-md-block d-xxl-none">
                     <Container>
-                        <Row onClick={themeSwitch} className="d-none d-md-block d-xxl-none">
+                        <Row onClick={themeSwitch}>
                             {/* Visible only on sm */}
                             <BulbSvg className="logo"/>
                         </Row>
