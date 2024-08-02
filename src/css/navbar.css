@@ -1,13 +1,21 @@
-
-
 .fixed-navbar {
     color:            var(--fg1);
     background-color: var(--bg0_h);
     height:           var(--nav-height);
 }
 
+.navbar-collapse.collapsing > .navbar-nav,
+.navbar-collapse.collapse.show > .navbar-nav {
+    margin-top:       .6rem;
+    /* top: var(--nav-height); */
+    background-color: var(--bg0_s);
+}
+
+.navbar-collapse .navbar-nav .nav-link {
+    margin-left: 1.75rem;
+}
+
 div.navbar-nav > a.my-navlink.nav-link {
-    padding-left:  .5rem;
     padding-right: 3.5rem;
 }
 
@@ -33,11 +41,11 @@ div.navbar-nav > a.my-navlink.nav-link {
     font-family: "3DIsometric-Bold", serif;
 }
 
-.title,
-.my-navlink.nav-link:hover {
+.my-navlink.nav-link:hover * {
     color: var(--green-sec);
 }
 
+.title,
 .my-navlink.nav-link:link *, .my-navlink.nav-link:visited * {
     color: var(--green-pri);
 }
