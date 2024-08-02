@@ -2,7 +2,7 @@ import React, {useContext, useEffect} from "react";
 import TitleContext from "../contexts/TitleContext.js";
 import ThemeContext from "../contexts/ThemeContext.js";
 
-function Resume(props) {
+function Resume() {
     const [theme, setTheme] = useContext(ThemeContext);
 
     const [title, setTitle] = useContext(TitleContext);
