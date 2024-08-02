@@ -28,7 +28,7 @@
     background-color: var(--bg0);
 }
 
-/* When size is greater than bootstrap md (768 px) */
+/* When window size is >= bootstrap md (768 px) */
 @media (min-width: 768px) {
     /* Fixes issue when menu is opened and the window is expanded. */
     .light .navbar-collapse.collapsing > .navbar-nav,
@@ -43,25 +43,27 @@
 
     /* fixes transition artifact from menu begin open */
     .navbar-collapse.collapsing {
-        height: inherit;
+        height:     inherit;
         transition: none;
     }
 }
 
+/* Shift items in nav when menu open and < to bootstrap md (768px) */
 @media (max-width: 767px) {
-    /* Shift items in nav down when menu open and leq to bootstrap md (740px) */
+    .navbar-collapse.collapsing > .navbar-nav > .my-navlink.nav-link,
+    .navbar-collapse.collapse.show > .navbar-nav > .my-navlink.nav-link { /* gt bootstrap md size */
+        margin-left: 1.75rem;
+    }
+
     .navbar-collapse.collapsing > .navbar-nav,
     .navbar-collapse.collapse.show > .navbar-nav {
         margin-top: calc(var(--nav-height) - 3rem);
     }
 }
 
-.navbar-collapse .navbar-nav .nav-link { /* leq bootstrap md */
-    margin-left: 1.75rem;
-}
-
 div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
-    padding-right: 2rem;
+    margin-left:  0;
+    margin-right: 2.5rem;
 }
 
 /* Title and Toggler Position fixed in nav when in lt/eq bootstrap md */
