@@ -8,28 +8,52 @@
 
 /* Light mode menu colors */
 .light .fixed-navbar {
-    background-color: var(--bg1);
+    background-color: var(--bg0_h);
 }
+
 
 .light .navbar-collapse.collapsing > .navbar-nav,
 .light .navbar-collapse.collapse.show > .navbar-nav { /* dark mode dropdown menu */
-    background-color: var(--bg0_s);
+    background-color: var(--bg0);
 }
+
 
 /* Dark mode menu colors */
 .dark .fixed-navbar {
-    background-color: var(--bg0);
+    background-color: var(--bg0_s);
 }
 
 .dark .navbar-collapse.collapsing > .navbar-nav,
 .dark .navbar-collapse.collapse.show > .navbar-nav { /* light mode dropdown menu */
-    background-color: var(--bg0_s);
+    background-color: var(--bg0);
 }
 
-/* Navbar element padding */
-.navbar-collapse.collapsing > .navbar-nav,
-.navbar-collapse.collapse.show > .navbar-nav {
-    margin-top: calc(var(--nav-height) - 3rem);
+/* When size is greater than bootstrap md (768 px) */
+@media (min-width: 768px) {
+    /* Fixes issue when menu is opened and the window is expanded. */
+    .light .navbar-collapse.collapsing > .navbar-nav,
+    .light .navbar-collapse.collapse.show > .navbar-nav {
+        background-color: transparent;
+    }
+
+    .dark .navbar-collapse.collapsing > .navbar-nav,
+    .dark .navbar-collapse.collapse.show > .navbar-nav {
+        background-color: transparent;
+    }
+
+    /* fixes transition artifact from menu begin open */
+    .navbar-collapse.collapsing {
+        height: inherit;
+        transition: none;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Shift items in nav down when menu open and leq to bootstrap md (740px) */
+    .navbar-collapse.collapsing > .navbar-nav,
+    .navbar-collapse.collapse.show > .navbar-nav {
+        margin-top: calc(var(--nav-height) - 3rem);
+    }
 }
 
 .navbar-collapse .navbar-nav .nav-link { /* leq bootstrap md */

@@ -3,6 +3,8 @@ import React, {useContext, useEffect} from "react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
+// TODO: make pages into a component
+
 function Home() {
     const [theme, setTheme] = useContext(ThemeContext);
 
