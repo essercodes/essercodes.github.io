@@ -1,7 +1,9 @@
 @import url("./css/gruvbox.css");
 
 :root {
-    background-color: var(--bg);
+    background-color:        var(--bg);
+    --nav-height:            3.6rem;
+    --fixed-element-padding: .25rem;
 }
 
 .light#App,

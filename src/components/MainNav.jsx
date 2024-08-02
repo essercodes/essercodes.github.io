@@ -20,7 +20,9 @@ function MainNav() {
         document.documentElement.style.setProperty('--bg', bg_color);
     }
 
-    useEffect(() => {document.getElementById("homeButton").click()}, [])
+    useEffect(() => {
+        document.getElementById("homeButton").click()
+    }, [])
 
     return (
         <div>
@@ -31,11 +33,14 @@ function MainNav() {
                 className={`${theme} fixed-navbar`}
                 variant="blue"
             >
-                <div onClick={themeSwitch} className="d-md-none d-xxl-block mx-auto">
+                <div className="title px-4 d-md-none d-block">
+                    <Letters className="nav-letter" text="Home"/>
+                </div>
+                <div onClick={themeSwitch} id="center-logo" className="d-md-none d-block mx-auto">
                     {/*Hidden only on sm*/}
                     <BulbSvg className="logo"/>
                 </div>
-                <Navbar.Brand className="d-none d-md-block d-xxl-none">
+                <Navbar.Brand className="d-none d-md-block d-none">
                     <Container>
                         <Row onClick={themeSwitch}>
                             {/* Visible only on sm */}

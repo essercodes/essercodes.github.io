@@ -6,7 +6,6 @@ function Home(props) {
     const [theme, setTheme] = useContext(ThemeContext);
 
     return <div className={`${theme} main-body`}>
-        <h1>Max Esser</h1>
         <sub>max@esser.codes</sub>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sed nisl semper diam egestas vestibulum ac quis felis. Suspendisse vel viverra ipsum. In semper elit mi, id efficitur lacus suscipit vel. Mauris venenatis tellus non enim eleifend, lacinia rutrum enim porta. Quisque pellentesque hendrerit lacus, a posuere quam iaculis ut. Praesent bibendum nibh eu leo aliquam, non placerat sapien semper. Integer tincidunt enim sit amet odio laoreet suscipit. Vivamus sit amet dictum mi. Cras id interdum mi, nec lobortis ipsum. Pellentesque odio mi, lobortis vitae felis non, fermentum dignissim mauris. Duis sodales nibh at magna luctus, quis viverra nisi consectetur. Integer hendrerit nisl et turpis accumsan volutpat. Fusce euismod elit dui, sed mollis odio efficitur id.</p>
