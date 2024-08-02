@@ -1,7 +1,7 @@
 import '../css/navbar.css'
 import '../css/logo.css'
 
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useEffect} from "react";
 import {Navbar, Nav, Container, Row,} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
 import BulbSvg from "/public/bulb.svg?react";
@@ -31,12 +31,14 @@ function MainNav() {
                 className={`${theme} fixed-navbar`}
                 variant="blue"
             >
-                <div onClick={themeSwitch} className="mx-3 d-md-none">
+                <div onClick={themeSwitch} className="d-md-none d-xxl-block mx-auto">
+                    {/*Hidden only on sm*/}
                     <BulbSvg className="logo"/>
                 </div>
                 <Navbar.Brand>
                     <Container>
-                        <Row onClick={themeSwitch} className="g-2">
+                        <Row onClick={themeSwitch} className="d-none d-md-block d-xxl-none">
+                            {/* Visible only on sm */}
                             <BulbSvg className="logo"/>
                         </Row>
                     </Container>
@@ -44,13 +46,13 @@ function MainNav() {
                 <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse>
                     <Nav>
-                        <Nav.Link id="homeButton" className="my-navlink px-4" as={Link} to="/" eventKey={"home"}>
+                        <Nav.Link id="homeButton" className="my-navlink" as={Link} to="/" eventKey={"home"}>
                             <Letters className="nav-letter" text="Home"/>
                         </Nav.Link>
-                        <Nav.Link className="my-navlink px-4" as={Link} to="about" eventKey={"about"}>
+                        <Nav.Link className="my-navlink" as={Link} to="about" eventKey={"about"}>
                             <Letters className="nav-letter" text="About Me"/>
                         </Nav.Link>
-                        <Nav.Link className="my-navlink px-4" as={Link} to="resume" eventKey={"resume"}>
+                        <Nav.Link className="my-navlink" as={Link} to="resume" eventKey={"resume"}>
                             <Letters className="nav-letter" text="Resume"/>
                         </Nav.Link>
                     </Nav>
