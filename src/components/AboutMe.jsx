@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
+import TitleContext from "../contexts/TitleContext.js";
 
 function AboutMe(props) {
+    const [title, setTitle] = useContext(TitleContext);
+    useEffect(() => setTitle("About Me"), [])
+
     return <div>
-        <h1>About Me</h1>
         <sub>max@esser.codes</sub>
     </div>
 }
