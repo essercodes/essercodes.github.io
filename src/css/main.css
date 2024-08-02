@@ -1,15 +1,6 @@
 #main-outlet {
-    margin: 1rem 3rem;
+    margin: 1rem 4rem;
 }
-
-/* *.dark { */
-/*     color:            var(--fg1); */
-/*     background-color: var(--bg0_h); */
-/* } */
-/* *.light { */
-/*     color:            var(--fg1); */
-/*     background-color: var(--bg0_h); */
-/* } */
 
 body {
     padding-top: calc(var(--nav-height) - 1rem);

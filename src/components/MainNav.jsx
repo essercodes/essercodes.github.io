@@ -7,9 +7,11 @@ import {Link, Outlet} from "react-router-dom";
 import BulbSvg from "/public/bulb.svg?react";
 import Letters from "./Letters.jsx";
 import ThemeContext from "../contexts/ThemeContext.js";
+import TitleContext from "../contexts/TitleContext.js";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
+    const [title, setTitle] = useContext(TitleContext);
     const themeSwitch = () => {
         setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
 
@@ -34,7 +36,7 @@ function MainNav() {
                 variant="blue"
             >
                 <div className="title px-4 d-md-none d-block">
-                    <Letters className="nav-letter" text="Home"/>
+                    <Letters className="nav-letter" text={title}/>
                 </div>
                 <div onClick={themeSwitch} id="center-logo" className="d-md-none d-block mx-auto">
                     {/*Hidden only on sm*/}

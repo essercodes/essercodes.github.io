@@ -1,9 +1,13 @@
 import React, {useContext, useEffect, useState} from "react";
 
 import ThemeContext from "../contexts/ThemeContext.js";
+import TitleContext from "../contexts/TitleContext.js";
 
 function Home(props) {
     const [theme, setTheme] = useContext(ThemeContext);
+
+    const [title, setTitle] = useContext(TitleContext);
+    useEffect(() => setTitle("Home"), [])
 
     return <div className={`${theme} main-body`}>
         <sub>max@esser.codes</sub>
