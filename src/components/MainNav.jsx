@@ -22,6 +22,7 @@ function MainNav() {
         document.documentElement.style.setProperty('--bg', bg_color);
     }
 
+    // Make the home button active in bootstrap nav
     useEffect(() => {
         document.getElementById("homeButton").click()
     }, [])
@@ -53,15 +54,34 @@ function MainNav() {
                 <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse>
                     <Nav>
-                        <Nav.Link id="homeButton" className="my-navlink" as={Link} to="/" eventKey={"home"}>
-                            <Letters className="nav-letter" text="Home"/>
-                        </Nav.Link>
-                        <Nav.Link className="my-navlink" as={Link} to="about" eventKey={"about"}>
-                            <Letters className="nav-letter" text="About Me"/>
-                        </Nav.Link>
-                        <Nav.Link className="my-navlink" as={Link} to="resume" eventKey={"resume"}>
-                            <Letters className="nav-letter" text="Resume"/>
-                        </Nav.Link>
+                        {(title === "Home") ? <>
+                            <Nav.Link id="homeButton" className="my-navlink d-none d-md-block d-none" as={Link} to="/" eventKey={"home"}>
+                                <Letters className="nav-letter" text="Home"/>
+                            </Nav.Link>
+                        </> : <>
+                            <Nav.Link id="homeButton" className="my-navlink" as={Link} to="/" eventKey={"home"}>
+                                <Letters className="nav-letter" text="Home"/>
+                            </Nav.Link>
+                        </>}
+                        {(title === "About") ? <>
+                            <Nav.Link className="my-navlink d-none d-md-block d-none" as={Link} to="about" eventKey={"about"}>
+                                <Letters className="nav-letter" text="About"/>
+                            </Nav.Link>
+                        </> : <>
+                            <Nav.Link className="my-navlink" as={Link} to="about" eventKey={"about"}>
+                                <Letters className="nav-letter" text="About"/>
+                            </Nav.Link>
+                        </>}
+                        {(title === "Resume") ? <>
+                            <Nav.Link className="my-navlink d-none d-md-block d-none" as={Link} to="resume" eventKey={"resume"}>
+                                <Letters className="nav-letter" text="Resume"/>
+                            </Nav.Link>
+                        </> : <>
+                            <Nav.Link className="my-navlink" as={Link} to="resume" eventKey={"resume"}>
+                                <Letters className="nav-letter" text="Resume"/>
+                            </Nav.Link>
+                        </>}
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
