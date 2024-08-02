@@ -1,7 +1,10 @@
 /* Gruvbox Color Scheme */
 /* https://github.com/morhetz/gruvbox */
 :root {
-    --bg:         var(--dark0);
+    --bg:         var(--dark0); /* variable is update to be root background */
+    --dark-bg:    #1D2021; /* dark bg0_h */
+    --light-bg:   #F2E5BC; /* light bg0_s */
+
     --red-pri:    #CC241D;
     --green-pri:  #98971A;
     --yellow-pri: #D79921;
@@ -23,15 +26,15 @@
 }
 
 .dark {
-    --bg0_h:      #1D2021;
+    --bg0_h:      var(--dark-bg);
     --bg0_s:      #32302F;
-    --bg0:        var(--dark0);  /* bg */
+    --bg0:        var(--dark0); /* bg */
     --bg1:        var(--dark1);
     --bg2:        var(--dark2);
     --bg3:        var(--dark3);
     --bg4:        var(--dark4);
     --fg0:        var(--light0);
-    --fg1:        var(--light1);  /* fg */
+    --fg1:        var(--light1); /* fg */
     --fg2:        var(--light2);
     --fg3:        var(--light3);
     --fg4:        var(--light4);
@@ -47,14 +50,14 @@
 
 .light {
     --bg0_h:      #F9F5D7;
-    --bg0_s:      #F2E5BC;
-    --bg0:        var(--light0);  /* bg */
+    --bg0_s:      var(--light-bg);
+    --bg0:        var(--light0); /* bg */
     --bg1:        var(--light1);
     --bg2:        var(--light2);
     --bg3:        var(--light3);
     --bg4:        var(--light4);
     --fg0:        var(--dark0);
-    --fg1:        var(--dark1);  /* fg */
+    --fg1:        var(--dark1); /* fg */
     --fg2:        var(--dark2);
     --fg3:        var(--dark3);
     --fg4:        var(--dark4);

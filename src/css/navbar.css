@@ -1,24 +1,46 @@
-.fixed-navbar {
-    color:            var(--fg1);
-    background-color: var(--bg0_h);
-    height:           var(--nav-height);
+:root {
+    --menu-title-pad: 1.75rem;
 }
 
-.navbar-collapse.collapsing > .navbar-nav,
-.navbar-collapse.collapse.show > .navbar-nav {
-    margin-top:       .6rem;
-    /* top: var(--nav-height); */
+.fixed-navbar {
+    height: var(--nav-height);
+}
+
+/* Light mode menu colors */
+.light .fixed-navbar {
+    background-color: var(--bg1);
+}
+
+.light .navbar-collapse.collapsing > .navbar-nav,
+.light .navbar-collapse.collapse.show > .navbar-nav { /* dark mode dropdown menu */
     background-color: var(--bg0_s);
 }
 
-.navbar-collapse .navbar-nav .nav-link {
+/* Dark mode menu colors */
+.dark .fixed-navbar {
+    background-color: var(--bg0);
+}
+
+.dark .navbar-collapse.collapsing > .navbar-nav,
+.dark .navbar-collapse.collapse.show > .navbar-nav { /* light mode dropdown menu */
+    background-color: var(--bg0_s);
+}
+
+/* Navbar element padding */
+.navbar-collapse.collapsing > .navbar-nav,
+.navbar-collapse.collapse.show > .navbar-nav {
+    margin-top: calc(var(--nav-height) - 3rem);
+}
+
+.navbar-collapse .navbar-nav .nav-link { /* leq bootstrap md */
     margin-left: 1.75rem;
 }
 
-div.navbar-nav > a.my-navlink.nav-link {
-    padding-right: 3.5rem;
+div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
+    padding-right: 2rem;
 }
 
+/* Title and Toggler Position fixed in nav when in lt/eq bootstrap md */
 .navbar-toggler {
     position: fixed;
     right:    .25rem;
@@ -29,6 +51,7 @@ div.navbar-nav > a.my-navlink.nav-link {
     left:     .25rem;
 }
 
+/* Link and Title Fonts */
 .title,
 .my-navlink.nav-link {
     font-family: "3DIsometric-Regular", serif;
@@ -41,6 +64,7 @@ div.navbar-nav > a.my-navlink.nav-link {
     font-family: "3DIsometric-Bold", serif;
 }
 
+/* Link an Title Colors */
 .my-navlink.nav-link:hover * {
     color: var(--green-sec);
 }

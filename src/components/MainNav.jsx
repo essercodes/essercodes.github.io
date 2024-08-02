@@ -12,14 +12,23 @@ import TitleContext from "../contexts/TitleContext.js";
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
     const [title, setTitle] = useContext(TitleContext);
-    const themeSwitch = () => {
-        setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
 
-        // Set the root background to light or dark --bg0
+    const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');
-        const bg_color = getComputedStyle(app_elem).getPropertyValue('--bg0');
-        console.log(app_elem, bg_color);
+        const bg_color = getComputedStyle(app_elem).getPropertyValue(prop) ?? "#FFFFFF";
         document.documentElement.style.setProperty('--bg', bg_color);
+    }
+
+    const themeSwitch = () => {
+        setTheme(prevTheme => {
+            if (prevTheme === "light") {
+                setBackgroundToCssProp('--dark-bg');
+                return "dark";
+            } else {
+                setBackgroundToCssProp('--light-bg');
+                return "light";
+            }
+        });
     }
 
     // Make the home button active in bootstrap nav
