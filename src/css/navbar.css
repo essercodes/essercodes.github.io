@@ -4,15 +4,20 @@
     height:           4rem;
 }
 
+div.navbar-nav > a.my-navlink.nav-link {
+    padding-left: .5rem;
+    padding-right: 3.5rem;
+}
+
 .my-navlink.nav-link {
-    font-family: "3DIsometric", serif;
+    font-family: "3DIsometric-Regular", serif;
     font-size:   2.3rem;
 }
 
 .title,
 .my-navlink.nav-link:hover,
 .my-navlink.nav-link.active {
-    font-family: "3DIsometricBold", serif;
+    font-family: "3DIsometric-Bold", serif;
 }
 
 .my-navlink.nav-link:hover {
