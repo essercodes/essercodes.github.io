@@ -1,7 +1,6 @@
 import '../css/fonts.css'
 import '../css/main.css'
 
-import React, {useState, useContext} from "react"
 import {HashRouter, Routes, Route} from "react-router-dom"
 import Home from "./Home"
 import About from "./About.jsx"

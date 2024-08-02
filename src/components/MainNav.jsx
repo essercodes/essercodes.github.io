@@ -11,7 +11,7 @@ import TitleContext from "../contexts/TitleContext.js";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
-    const [title, setTitle] = useContext(TitleContext);
+    const [title, _] = useContext(TitleContext);
 
     const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');

@@ -1,9 +1,9 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useEffect} from "react";
 
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
-function Home(props) {
+function Home() {
     const [theme, setTheme] = useContext(ThemeContext);
 
     const [title, setTitle] = useContext(TitleContext);
