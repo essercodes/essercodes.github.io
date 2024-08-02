@@ -7,6 +7,7 @@ import Home from "./Home"
 import AboutMe from "./AboutMe"
 import Resume from "./Resume"
 import MainNav from "./MainNav"
+import Letters from "./Letters.jsx";
 
 function Main() {
     return (

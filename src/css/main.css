@@ -12,5 +12,5 @@
 /* } */
 
 body {
-    padding-top: 3rem;
+    padding-top: calc(var(--nav-height) - 1rem);
 }
