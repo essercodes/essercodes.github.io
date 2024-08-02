@@ -62,6 +62,7 @@ function MainNav() {
                 </Navbar.Brand>
                 <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse>
+                    {/* todo: make these 3 into a component */}
                     <Nav>
                         {(title === "Home") ? <>
                             <Nav.Link id="homeButton" className="my-navlink d-none d-md-block d-none" as={Link} to="/" eventKey={"home"}>
@@ -73,20 +74,20 @@ function MainNav() {
                             </Nav.Link>
                         </>}
                         {(title === "About") ? <>
-                            <Nav.Link className="my-navlink d-none d-md-block d-none" as={Link} to="about" eventKey={"about"}>
+                            <Nav.Link id="aboutButton" className="my-navlink d-none d-md-block d-none" as={Link} to="about" eventKey={"about"}>
                                 <Letters className="nav-letter" text="About"/>
                             </Nav.Link>
                         </> : <>
-                            <Nav.Link className="my-navlink" as={Link} to="about" eventKey={"about"}>
+                            <Nav.Link id="aboutButton" className="my-navlink" as={Link} to="about" eventKey={"about"}>
                                 <Letters className="nav-letter" text="About"/>
                             </Nav.Link>
                         </>}
                         {(title === "Resume") ? <>
-                            <Nav.Link className="my-navlink d-none d-md-block d-none" as={Link} to="resume" eventKey={"resume"}>
+                            <Nav.Link id="resumeButton" className="my-navlink d-none d-md-block d-none" as={Link} to="resume" eventKey={"resume"}>
                                 <Letters className="nav-letter" text="Resume"/>
                             </Nav.Link>
                         </> : <>
-                            <Nav.Link className="my-navlink" as={Link} to="resume" eventKey={"resume"}>
+                            <Nav.Link id="resumeButton" className="my-navlink" as={Link} to="resume" eventKey={"resume"}>
                                 <Letters className="nav-letter" text="Resume"/>
                             </Nav.Link>
                         </>}
