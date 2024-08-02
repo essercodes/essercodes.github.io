@@ -3,11 +3,9 @@
 :root {
     background-color:        var(--bg);
     --nav-height:            3.6rem;
-    --fixed-element-padding: .25rem;
 }
 
-.light#App,
-.dark#App {
+#App {
+    background-color: var(--bg);
     color:            var(--fg1);
-    background-color: var(--bg0);
 }
