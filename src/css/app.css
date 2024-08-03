@@ -10,15 +10,7 @@ body {
     background-color: transparent !important;
 }
 
-#App {
-    color:       var(--fg1);
-    font-family: "Monaspace Argon";
-}
 
-h1, h2, h3, h4, h5 {
-    font-family: "Monaspace Krypton";
-    font-stretch: expanded;
-}
 
 #main-outlet {
     margin: 5rem 1rem;

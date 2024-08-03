@@ -69,21 +69,21 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
 
 /* Link an Title Colors */
 .my-navlink.nav-link:hover * {
-    color: var(--green-sec);
+    color: var(--gray-pri);
 }
 
 .title,
 .my-navlink.nav-link:link *, .my-navlink.nav-link:visited * {
-    color: var(--green-pri);
+    color: var(--gray-sec);
 }
 
 .title,
 .my-navlink.nav-link:link.active *, .my-navlink.nav-link:visited.active * {
-    color: var(--aqua-pri);
+    color: var(--green-pri);
 }
 
 .my-navlink.nav-link:hover.active * {
-    color: var(--aqua-sec);
+    color: var(--green-sec);
 }
 
 /* Keep words from wrapping, letters are individual elements */

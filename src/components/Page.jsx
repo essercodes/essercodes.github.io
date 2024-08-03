@@ -1,3 +1,5 @@
+import '../css/page.css';
+
 import React, {useContext, useEffect} from "react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
@@ -10,7 +12,7 @@ function Page(props) {
     useEffect(() => setTitle(props.title), [])
 
     return <>
-        <div className={`${theme} main-body`}>
+        <div id="page" className={`${theme} main-body`}>
             {props.children}
         </div>
     </>
