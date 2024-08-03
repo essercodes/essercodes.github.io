@@ -1,14 +1,26 @@
+import '../css/app.css'
 import '../css/fonts.css'
 import '../css/main.css'
 
+import {useState} from "react";
 import {HashRouter, Routes, Route} from "react-router-dom"
+
+import MainNav from "./MainNav"
+
 import Home from "../pages/Home.jsx"
 import About from "../pages/About.jsx"
 import Resume from "../pages/Resume.jsx"
-import MainNav from "./MainNav"
 
-function Main() {
+import ThemeContext from "../contexts/ThemeContext.js";
+import TitleContext from "../contexts/TitleContext.js";
+
+function App() {
+    const [theme, setTheme] = useState('dark');  // TODO: get theme
+    const [title, setTitle] = useState('');
     return (
+        <ThemeContext.Provider value={[theme, setTheme]}>
+        <TitleContext.Provider value={[title, setTitle]}>
+            <div className={`${theme}`} id="App">
             <HashRouter basename="/">
                 <Routes>
                     <Route path="/" element={<MainNav/>}>
@@ -18,8 +30,10 @@ function Main() {
                     </Route>
                 </Routes>
             </HashRouter>
+            </div>
+        </TitleContext.Provider>
+        </ThemeContext.Provider>
     )
-
 }
 
-export default Main;
+export default App

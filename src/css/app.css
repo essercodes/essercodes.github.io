@@ -1,4 +1,4 @@
-@import url("./css/gruvbox.css");
+@import url("gruvbox.css");
 
 :root {
     background-color:        var(--bg);
@@ -7,4 +7,8 @@
 #App {
     background-color: var(--bg);
     color:            var(--fg1);
+}
+
+#main-outlet {
+    margin: 5rem 1rem;
 }
