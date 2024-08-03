@@ -1,5 +1,5 @@
 :root {
-    --menu-title-pad: 1.75rem;
+    --menu-title-pad: 1.5rem;
 }
 
 /* Light mode menu colors */
@@ -15,7 +15,8 @@
 }
 
 div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
-    margin-left: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     margin-right: 2rem;
     padding: 0;
 }
@@ -23,6 +24,10 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
 .title {
     flex: 1;
     margin-left: var(--menu-title-pad);
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
 }
 
 /* Shift items in nav when menu open and < to bootstrap md (768px) var(--bs-breakpoint-md does not work.*/
