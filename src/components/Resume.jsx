@@ -9,9 +9,6 @@ function Resume() {
     useEffect(() => setTitle("Resume"), [])
 
     return <div className={`${theme} main-body`}>
-        <sub>max@esser.codes</sub>
-        <br/>
-        <br/>
         <h2>RESUME CONTENT</h2>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
