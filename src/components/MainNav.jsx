@@ -13,6 +13,7 @@ import MyNavLink from "./MyNavLink.jsx";
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
     const [title, _] = useContext(TitleContext);
+    const landing_page_navlink_id = "Home-Button";
 
     const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');
@@ -34,7 +35,7 @@ function MainNav() {
 
     // Make the home button active in bootstrap nav
     useEffect(() => {
-        document.getElementById("homeButton").click()
+        document.getElementById(landing_page_navlink_id).click()
     }, [])
 
     return (
