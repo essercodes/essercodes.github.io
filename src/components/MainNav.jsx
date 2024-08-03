@@ -45,7 +45,7 @@ function MainNav() {
                 expand="md"
                 fixed="top"
                 className={`${theme} fixed-navbar`}
-                variant="blue"
+                variant={theme}
             >
                 <div className="title d-md-none d-block">
                     <Letters className="nav-letter" text={title}/>
