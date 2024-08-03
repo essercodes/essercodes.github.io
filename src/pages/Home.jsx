@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "./Page.jsx";
+import Page from "../components/Page.jsx";
 
 // TODO: make pages into a component
 

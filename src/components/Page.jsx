@@ -9,9 +9,11 @@ function Page(props) {
     const [title, setTitle] = useContext(TitleContext);
     useEffect(() => setTitle(props.title), [])
 
-    return <div className={`${theme} main-body`}>
-        {props.children}
-    </div>
+    return <>
+        <div className={`${theme} main-body`}>
+            {props.children}
+        </div>
+    </>
 }
 
 export default Page;

@@ -7,13 +7,6 @@
     flex: 1;
 }
 
-/* Brand */
-.navbar-brand {
-    width: 4rem;
-    /* width: 10%; */
-    height: 100%;
-}
-
 .light .logo,
 .ligt .logo:active
 {
