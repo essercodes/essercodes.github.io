@@ -14,9 +14,10 @@ body {
     color:       var(--fg1);
     font-family: "Monaspace Argon";
 }
-#App h1 {
-    font-family: "Monaspace Argon";
-    font-style: italic;
+
+h1, h2, h3, h4, h5 {
+    font-family: "Monaspace Krypton";
+    font-stretch: expanded;
 }
 
 #main-outlet {
