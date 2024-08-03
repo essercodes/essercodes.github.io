@@ -3,7 +3,7 @@ import Page from "../components/Page.jsx";
 
 function About() {
     return <Page title="About">
-        <h2>ABOUT CONTENT</h2>
+        <h1>ABOUT CONTENT</h1>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
                 nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere

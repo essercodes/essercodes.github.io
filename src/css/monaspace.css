@@ -1,0 +1,74 @@
+/* Monaspace Argon */
+/* https://github.com/githubnext/monaspace/main/fonts/otf/MonaspaceArgon-Bold.otf */
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-Bold.woff2") format("woff2"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-Bold.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceArgon-Bold.otf") format("opentype");
+    font-style:  normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-BoldItalic.woff2") format("woff2"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-BoldItalic.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceArgon-BoldItalic.otf") format("opentype");
+    font-style:  italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraBold.woff2") format("woff2"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraBold.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceArgon-ExtraBold.otf") format("opentype");
+    font-style:  normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraBoldItalic.woff2") format("woff2"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraBoldItalic.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceArgon-ExtraBoldItalic.otf") format("opentype");
+    font-style:  italic;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraLight.woff2") format("woff2"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraLight.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceArgon-ExtraLight.otf") format("opentype");
+    font-style:  normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraLightItalic.woff2") format("woff2"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-ExtraLightItalic.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceArgon-ExtraLightItalic.otf") format("opentype");
+    font-style:  italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-Italic.woff2") format("woff2"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-Italic.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceArgon-Italic.otf") format("opentype");
+    font-style:  italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-Regular.woff2") format("woff2");
+    src:         url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceArgon-Regular.woff") format("woff"),
+                 url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceArgon-Regular.otf") format("opentype");
+    font-style:  normal;
+    font-weight: normal;
+}

@@ -11,7 +11,12 @@ body {
 }
 
 #App {
-    color: var(--fg1);
+    color:       var(--fg1);
+    font-family: "Monaspace Argon";
+}
+#App h1 {
+    font-family: "Monaspace Argon";
+    font-style: italic;
 }
 
 #main-outlet {

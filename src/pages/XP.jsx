@@ -3,7 +3,7 @@ import Page from "../components/Page.jsx";
 
 function XP() {
     return <Page title="XP">
-        <h2>RESUME CONTENT</h2>
+        <h1>RESUME CONTENT</h1>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
                 nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
