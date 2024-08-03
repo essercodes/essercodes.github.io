@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import Letters from "./Letters.jsx";
 import TitleContext from "../contexts/TitleContext.js";
 
+// props.title must match Page props.title
 function MyNavLink(props) {
     const [title, _] = useContext(TitleContext);
 
@@ -11,7 +12,7 @@ function MyNavLink(props) {
     const hideClass = title === props.title ? "d-none d-md-block d-none" : "";
 
     return <Nav.Link
-        id="homeButton"
+        id={`${props.title}-Button`}
         className={`my-navlink ${hideClass}`}
         as={Link}
         to={props.to}
