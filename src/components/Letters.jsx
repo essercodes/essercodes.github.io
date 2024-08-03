@@ -2,6 +2,9 @@ import {React} from 'react';
 import {Col, Row} from "react-bootstrap";
 
 function Letters(props) {
+    if (props.text === undefined) {
+        throw new Error("props.text not set.")
+    }
     return <Row>
         {props.text.split("").map((char, i) => {
             {

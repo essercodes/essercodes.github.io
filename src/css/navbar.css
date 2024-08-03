@@ -1,31 +1,34 @@
 :root {
-    --menu-title-pad: 1.5rem;
+    --menu-title-pad: 1.1rem;
 }
 
 /* Light mode menu colors */
 .light .fixed-navbar,
 .light .navbar-nav {
-    background-color: var(--bg0_h);
+    background-color: var(--bg0_s);
 }
 
 /* Dark mode menu colors */
 .dark .fixed-navbar,
 .dark .navbar-nav {
-    background-color: var(--bg0_s);
+    background-color: var(--bg0_h);
 }
 
+/* expanded navbar alignment */
 div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
     margin-right: 3rem;
     padding:      0;
 }
 
-#center-logo {
-    flex: 1;
-}
-
+/* Compact navbar element alignment */
 .title {
     flex:        1;
     margin-left: var(--menu-title-pad);
+    padding:     0 .5rem;
+}
+
+#center-logo {
+    flex:   1;
 }
 
 .navbar-toggler {
@@ -38,6 +41,7 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
 @media (max-width: 768px) {
     .navbar-collapse.collapsing > .navbar-nav > .my-navlink.nav-link,
     .navbar-collapse.collapse.show > .navbar-nav > .my-navlink.nav-link { /* gt bootstrap md size */
+        padding:     0 .5rem;
         margin-left: var(--menu-title-pad);
     }
 
