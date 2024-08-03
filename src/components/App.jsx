@@ -9,7 +9,7 @@ import MainNav from "./MainNav"
 
 import Home from "../pages/Home.jsx"
 import About from "../pages/About.jsx"
-import Resume from "../pages/Resume.jsx"
+import XP from "../pages/XP.jsx"
 
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
@@ -26,7 +26,7 @@ function App() {
                     <Route path="/" element={<MainNav/>}>
                         <Route index element={<Home/>}/>
                         <Route path="/about" element={<About/>}/>
-                        <Route path="/resume" element={<Resume/>}/>
+                        <Route path="/xp" element={<XP/>}/>
                     </Route>
                 </Routes>
             </HashRouter>

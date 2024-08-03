@@ -1,8 +1,6 @@
 import React from "react";
 import Page from "../components/Page.jsx";
 
-// TODO: make pages into a component
-
 function Home() {
     return <Page title="Home">
         <h2>HOME CONTENT</h2>
