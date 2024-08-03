@@ -3,25 +3,16 @@
     width:  2.5rem;
 }
 
-#center-logo {
-    flex: 1;
+.navbar-brand {
+    width: 4rem;
 }
 
-.light .logo,
-.ligt .logo:active
-{
+.light .logo {
     stroke: var(--gray-pri);
     fill:   #FABD2F;
 }
 
-.light .logo:hover {
-    fill: none;
-}
-
 .dark .logo {
-    stroke:   #FABD2F;
-    fill: none;
-}
-.dark .logo:hover {
-    fill:   #FABD2F;
+    stroke: #FABD2F;
+    fill:   none;
 }

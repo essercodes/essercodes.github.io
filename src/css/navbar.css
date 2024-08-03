@@ -15,8 +15,12 @@
 }
 
 div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
-    margin-right:  3rem;
-    padding:       0;
+    margin-right: 3rem;
+    padding:      0;
+}
+
+#center-logo {
+    flex: 1;
 }
 
 .title {
