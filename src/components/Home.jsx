@@ -1,17 +1,10 @@
-import React, {useContext, useEffect} from "react";
-
-import ThemeContext from "../contexts/ThemeContext.js";
-import TitleContext from "../contexts/TitleContext.js";
+import React from "react";
+import Page from "./Page.jsx";
 
 // TODO: make pages into a component
 
 function Home() {
-    const [theme, setTheme] = useContext(ThemeContext);
-
-    const [title, setTitle] = useContext(TitleContext);
-    useEffect(() => setTitle("Home"), [])
-
-    return <div className={`${theme} main-body`}>
+    return <Page title="Home">
         <h2>HOME CONTENT</h2>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
@@ -41,7 +34,7 @@ function Home() {
                 leo metus dapibus nibh, non bibendum ante dui vitae dolor. Cras felis ligula, pretium vitae ultrices at,
                 fringilla ac turpis. Sed lobortis nec dolor quis dictum.</p>
         </div>
-    </div>
+    </Page>
 }
 
 export default Home;
