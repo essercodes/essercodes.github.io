@@ -27,24 +27,6 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
 .navbar-toggler {
     margin-right: 1rem;
     color:        transparent !important;
-    border-color: var(--fg4) !important;
-}
-
-/* .navbar-toggler-icon { */
-/*     background-image: none; */
-/*     background-color: var(--fg0); */
-/*     mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
-/* } */
-
-.navbar-toggler-icon {
-	display: inline-block;
-	width: 1.5em;
-	height: 1.5em;
-	vertical-align: middle;
-	background-image: var(--bs-navbar-toggler-icon-bg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
 }
 
 

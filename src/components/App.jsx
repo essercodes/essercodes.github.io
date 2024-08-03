@@ -18,22 +18,23 @@ function App() {
     const [theme, setTheme] = useState('dark');  // TODO: get theme
     const [title, setTitle] = useState('');
     return (
-        <ThemeContext.Provider value={[theme, setTheme]}>
+    <ThemeContext.Provider value={[theme, setTheme]}>
         <TitleContext.Provider value={[title, setTitle]}>
+            <script src="https://unpkg.com/feather-icons"></script>
             <div className={`${theme}`} id="App">
-            <HashRouter basename="/">
-                <Routes>
-                    <Route path="/" element={<MainNav/>}>
-                        <Route index element={<Home/>}/>
-                        <Route path="/about" element={<About/>}/>
-                        <Route path="/xp" element={<XP/>}/>
-                    </Route>
-                </Routes>
-            </HashRouter>
+                <HashRouter basename="/">
+                    <Routes>
+                        <Route path="/" element={<MainNav/>}>
+                            <Route index element={<Home/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/xp" element={<XP/>}/>
+                        </Route>
+                    </Routes>
+                </HashRouter>
             </div>
         </TitleContext.Provider>
-        </ThemeContext.Provider>
-    )
+    </ThemeContext.Provider>
+)
 }
 
 export default App
