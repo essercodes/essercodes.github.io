@@ -1,6 +1,5 @@
 import '../css/app.css'
 import '../css/fonts.css'
-import '../css/main.css'
 
 import {useState} from "react";
 import {HashRouter, Routes, Route} from "react-router-dom"
