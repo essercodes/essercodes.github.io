@@ -53,7 +53,14 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
     .navbar-collapse.collapsing > .navbar-nav > .my-navlink.nav-link,
     .navbar-collapse.collapse.show > .navbar-nav > .my-navlink.nav-link { /* gt bootstrap md size */
         margin-left: var(--menu-title-pad);
-        height: inherit;
+    }
+
+}
+
+@media (min-width: 767px) {
+    /* fixes transition artifact when navbar is open, window is expanded, and navlink is selected. */
+    .navbar-collapse.collapsing {
+        height:     inherit;
         transition: none;
     }
 }
