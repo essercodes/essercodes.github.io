@@ -45,7 +45,7 @@ function MainNav() {
                 className={`${theme} fixed-navbar`}
                 variant="blue"
             >
-                <div className="title px-4 d-md-none d-block">
+                <div className="title d-md-none d-block">
                     <Letters className="nav-letter" text={title}/>
                 </div>
                 <div onClick={themeSwitch} id="center-logo" className="d-md-none d-block mx-auto">

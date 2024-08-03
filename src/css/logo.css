@@ -3,7 +3,20 @@
     width:  2.5rem;
 }
 
-.light .logo {
+#center-logo {
+    flex: 1;
+}
+
+/* Brand */
+.navbar-brand {
+    width: 4rem;
+    /* width: 10%; */
+    height: 100%;
+}
+
+.light .logo,
+.ligt .logo:active
+{
     stroke: var(--gray-pri);
     fill:   #FABD2F;
 }
@@ -14,8 +27,8 @@
 
 .dark .logo {
     stroke:   #FABD2F;
+    fill: none;
 }
 .dark .logo:hover {
     fill:   #FABD2F;
 }
-

@@ -2,79 +2,35 @@
     --menu-title-pad: 1.75rem;
 }
 
-.fixed-navbar {
-    height: var(--nav-height);
-}
-
 /* Light mode menu colors */
-.light .fixed-navbar {
+.light .fixed-navbar,
+.light .navbar-nav {
     background-color: var(--bg0_h);
 }
 
-
-.light .navbar-collapse.collapsing > .navbar-nav,
-.light .navbar-collapse.collapse.show > .navbar-nav { /* dark mode dropdown menu */
-    background-color: var(--bg0);
-}
-
-
 /* Dark mode menu colors */
-.dark .fixed-navbar {
+.dark .fixed-navbar,
+.dark .navbar-nav {
     background-color: var(--bg0_s);
 }
 
-.dark .navbar-collapse.collapsing > .navbar-nav,
-.dark .navbar-collapse.collapse.show > .navbar-nav { /* light mode dropdown menu */
-    background-color: var(--bg0);
-}
-
-/* When window size is >= bootstrap md (768 px) */
-@media (min-width: 768px) {
-    /* Fixes issue when menu is opened and the window is expanded. */
-    .light .navbar-collapse.collapsing > .navbar-nav,
-    .light .navbar-collapse.collapse.show > .navbar-nav {
-        background-color: transparent;
-    }
-
-    .dark .navbar-collapse.collapsing > .navbar-nav,
-    .dark .navbar-collapse.collapse.show > .navbar-nav {
-        background-color: transparent;
-    }
-
-    /* fixes transition artifact from menu begin open */
-    .navbar-collapse.collapsing {
-        height:     inherit;
-        transition: none;
-    }
-}
-
-/* Shift items in nav when menu open and < to bootstrap md (768px) */
-@media (max-width: 767px) {
-    .navbar-collapse.collapsing > .navbar-nav > .my-navlink.nav-link,
-    .navbar-collapse.collapse.show > .navbar-nav > .my-navlink.nav-link { /* gt bootstrap md size */
-        margin-left: 1.75rem;
-    }
-
-    .navbar-collapse.collapsing > .navbar-nav,
-    .navbar-collapse.collapse.show > .navbar-nav {
-        margin-top: calc(var(--nav-height) - 3rem);
-    }
-}
-
 div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
-    margin-left:  0;
-    margin-right: 2.5rem;
-}
-
-/* Title and Toggler Position fixed in nav when in lt/eq bootstrap md */
-.navbar-toggler {
-    position: fixed;
-    right:    .25rem;
+    margin-left: .5rem;
+    margin-right: 2rem;
+    padding: 0;
 }
 
 .title {
-    position: fixed;
-    left:     .25rem;
+    flex: 1;
+    margin-left: var(--menu-title-pad);
+}
+
+/* Shift items in nav when menu open and < to bootstrap md (768px) var(--bs-breakpoint-md does not work.*/
+@media (max-width: 768px) {
+    .navbar-collapse.collapsing > .navbar-nav > .my-navlink.nav-link,
+    .navbar-collapse.collapse.show > .navbar-nav > .my-navlink.nav-link { /* gt bootstrap md size */
+        margin-left: var(--menu-title-pad);
+    }
 }
 
 /* Link and Title Fonts */
@@ -82,6 +38,9 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
 .my-navlink.nav-link {
     font-family: "3DIsometric-Regular", serif;
     font-size:   2.3rem;
+    line-height: 1;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
 }
 
 .title,
@@ -115,8 +74,9 @@ a.my-navlink > div.row {
     flex-wrap: nowrap;
 }
 
-.title > div.nav-letter,
+.title > div.row >div.nav-letter,
 a.my-navlink > div.row > div.nav-letter {
     flex-grow:  0;
     flex-basis: 0;
 }
+
