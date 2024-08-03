@@ -15,6 +15,7 @@ function MainNav() {
     const [title, _] = useContext(TitleContext);
     const landing_page_navlink_id = "Home-Button";
 
+
     const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');
         const bg_color = getComputedStyle(app_elem).getPropertyValue(prop) ?? "#FFFFFF";

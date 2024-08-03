@@ -1,12 +1,17 @@
 @import url("gruvbox.css");
 
 :root {
-    background-color:        var(--bg);
+    background-color: var(--bg);
+    --root-transition: none;  /* Updated on page load. */
+    transition:       var(--root-transition);
+}
+
+body {
+    background-color: transparent !important;
 }
 
 #App {
-    background-color: var(--bg);
-    color:            var(--fg1);
+    color: var(--fg1);
 }
 
 #main-outlet {
