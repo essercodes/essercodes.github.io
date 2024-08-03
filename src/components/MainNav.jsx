@@ -8,6 +8,7 @@ import BulbSvg from "/public/bulb.svg?react";
 import Letters from "./Letters.jsx";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
+import MyNavLink from "./MyNavLink.jsx";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
@@ -64,34 +65,9 @@ function MainNav() {
                 <Navbar.Collapse>
                     {/* todo: make these 3 into a component */}
                     <Nav>
-                        {(title === "Home") ? <>
-                            <Nav.Link id="homeButton" className="my-navlink d-none d-md-block d-none" as={Link} to="/" eventKey={"home"}>
-                                <Letters className="nav-letter" text="Home"/>
-                            </Nav.Link>
-                        </> : <>
-                            <Nav.Link id="homeButton" className="my-navlink" as={Link} to="/" eventKey={"home"}>
-                                <Letters className="nav-letter" text="Home"/>
-                            </Nav.Link>
-                        </>}
-                        {(title === "About") ? <>
-                            <Nav.Link id="aboutButton" className="my-navlink d-none d-md-block d-none" as={Link} to="about" eventKey={"about"}>
-                                <Letters className="nav-letter" text="About"/>
-                            </Nav.Link>
-                        </> : <>
-                            <Nav.Link id="aboutButton" className="my-navlink" as={Link} to="about" eventKey={"about"}>
-                                <Letters className="nav-letter" text="About"/>
-                            </Nav.Link>
-                        </>}
-                        {(title === "Resume") ? <>
-                            <Nav.Link id="resumeButton" className="my-navlink d-none d-md-block d-none" as={Link} to="resume" eventKey={"resume"}>
-                                <Letters className="nav-letter" text="Resume"/>
-                            </Nav.Link>
-                        </> : <>
-                            <Nav.Link id="resumeButton" className="my-navlink" as={Link} to="resume" eventKey={"resume"}>
-                                <Letters className="nav-letter" text="Resume"/>
-                            </Nav.Link>
-                        </>}
-
+                        <MyNavLink title="Home" to="/" eventKey="home"/>
+                        <MyNavLink title="About" to="about" eventKey="about"/>
+                        <MyNavLink title="Resume" to="resume" eventKey="resume"/>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
