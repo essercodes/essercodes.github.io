@@ -1,6 +1,5 @@
 import '../css/pages/home.css';
 
-import React, {useContext} from "react";
 import Page from "../components/Page.jsx";
 import {Card, Col, Container, Row} from "react-bootstrap";
 
@@ -12,7 +11,7 @@ import MailIcon from "bootstrap-icons/icons/mailbox.svg?react"
 class ContactCard extends React.Component {
     render() {
         return <Col xs={4} md={3} lg={2} className="contact-card">
-            <Card as="a" href={this.props.href} className="link-card mx-auto">
+            <Card as="a" href={this.props.href} target="_blank" rel="noopener noreferrer" className="link-card mx-auto">
                 <Card.Img as={this.props.as} alt={this.props.alt} className="contact-icon"/>
             </Card>
         </Col>;
