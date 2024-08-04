@@ -2,6 +2,10 @@
     --menu-title-pad: 1.1rem;
 }
 
+.fixed-navbar.navbar {
+    border-bottom: .1rem var(--green-pri) solid;
+}
+
 /* Light mode menu colors */
 .light .fixed-navbar,
 .light .navbar-nav {
