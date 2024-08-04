@@ -1,12 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import Page from "../components/Page.jsx";
+import {Alert, Button} from "react-bootstrap";
 
 function Experience() {
+    const [show, setShow] = useState(true);
     return <Page compactTitle="Exp" path="experience">
-        <h1>Under Construction</h1>
+        <Alert show={show} variant="success">
+            <Alert.Heading>Under Construction!</Alert.Heading>
+            <div className="d-flex justify-content-end">
+                <Button onClick={() => setShow(false)} variant="outline-success">
+                    Close me
+                </Button>
+            </div>
+        </Alert>
         <div>
             <p>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Nibh amet malesuada hendrerit semper vivamus cubilia
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Nibh amet malesuada hendrerit semper vivamus
+                cubilia
                 vestibulum massa. Platea maecenas dis elementum elementum natoque mus mi laoreet! Ante consectetur dui
                 potenti vel justo. At posuere odio erat venenatis magna netus; natoque dapibus. Magnis a cras interdum
                 aptent maecenas dapibus leo fusce hendrerit. Auctor suscipit parturient ex ultrices tortor tristique. Ac

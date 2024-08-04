@@ -1,9 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import Page from "../components/Page.jsx";
+import {Alert, Button} from "react-bootstrap";
 
 function About() {
+    const [show, setShow] = useState(true);
     return <Page compactTitle="About" path="about">
-        <h1>Under Construction</h1>
+        <Alert show={show} variant="success">
+            <Alert.Heading>Under Construction!</Alert.Heading>
+            <div className="d-flex justify-content-end">
+                <Button onClick={() => setShow(false)} variant="outline-success">
+                    Close me
+                </Button>
+            </div>
+        </Alert>
         <div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
