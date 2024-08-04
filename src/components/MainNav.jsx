@@ -4,7 +4,7 @@ import '../css/logo.css'
 import React, {useContext, useEffect} from "react";
 import {Navbar, Nav, Container, Row, Col,} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
-import BulbSvg from "/src/assets/bulb.svg?react";
+import BulbSvg from "../assets/logoBulb.svg?react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
