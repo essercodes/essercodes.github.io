@@ -8,7 +8,7 @@ import MainNav from "./MainNav"
 
 import Home from "../pages/Home.jsx"
 import About from "../pages/About.jsx"
-import XP from "../pages/XP.jsx"
+import Experience from "../pages/Experience.jsx"
 
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
@@ -16,6 +16,7 @@ import TitleContext from "../contexts/TitleContext.js";
 function App() {
     const [theme, setTheme] = useState('dark');  // TODO: get theme
     const [title, setTitle] = useState('');
+    const [shortTitle, setShortTitle] = useState('');
 
     // Set transition after page is loaded for when color scheme is switched.
     useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
 
     return (
         <ThemeContext.Provider value={[theme, setTheme]}>
-            <TitleContext.Provider value={[title, setTitle]}>
+            <TitleContext.Provider value={[title, shortTitle, setTitle, setShortTitle]}>
                 <script src="https://unpkg.com/feather-icons"></script>
                 <div className={`${theme}`} id="App">
                     <HashRouter basename="/">
@@ -32,7 +33,7 @@ function App() {
                             <Route path="/" element={<MainNav/>}>
                                 <Route index element={<Home/>}/>
                                 <Route path="/about" element={<About/>}/>
-                                <Route path="/xp" element={<XP/>}/>
+                                <Route path="/experience" element={<Experience/>}/>
                             </Route>
                         </Routes>
                     </HashRouter>

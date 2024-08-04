@@ -4,13 +4,13 @@ import '../css/logo.css'
 import React, {useContext, useEffect} from "react";
 import {Navbar, Nav, Container, Row, Col,} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
-import BulbSvg from "/public/bulb.svg?react";
+import BulbSvg from "/src/assets/bulb.svg?react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
-    const [title, _] = useContext(TitleContext);
+    const [title, titleShort, setTitle, setTitleShort] = useContext(TitleContext);
 
     const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');
@@ -40,7 +40,7 @@ function MainNav() {
                 variant={theme}
             >
                 <div className="title d-md-none d-block">
-                    <Letters className="nav-letter" text={title}/>
+                    <Letters className="nav-letter" text={titleShort}/>
                 </div>
                 <div onClick={themeSwitch} id="center-logo" className="d-md-none d-block mx-auto">
                     {/*Hidden only on sm*/}
@@ -59,7 +59,7 @@ function MainNav() {
                     <Nav>
                         <MyNavLink title="Home" to="/" eventKey="home"/>
                         <MyNavLink title="About" to="about" eventKey="about"/>
-                        <MyNavLink title="XP" to="xp" eventKey="xp"/>
+                        <MyNavLink title="Experience" to="experience" eventKey="xp"/>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -1,8 +1,8 @@
 import React from "react";
 import Page from "../components/Page.jsx";
 
-function XP() {
-    return <Page title="XP">
+function Experience() {
+    return <Page title="Experience" titleShort="EXP">
         <h1>RESUME CONTENT</h1>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
@@ -35,4 +35,4 @@ function XP() {
     </Page>
 }
 
-export default XP;
+export default Experience;
