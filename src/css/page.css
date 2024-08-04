@@ -39,15 +39,6 @@
         justify-content: center;
     }
 
-    .contact-text {
-        font-size: .6rem;
-        top: 0.1rem;
-        left: 0.1rem;
-    }
-
-    .contact-title {
-        position: absolute;
-    }
     .contact-icon {
         color: var(--fg0);
         width: 100%;

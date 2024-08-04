@@ -6,7 +6,7 @@ import TitleContext from "../contexts/TitleContext.js";
 
 // props.title must match MyNavLink props.title
 function Page(props) {
-    const [theme, setTheme] = useContext(ThemeContext);
+    const [theme, _] = useContext(ThemeContext);
 
     const [title, setTitle] = useContext(TitleContext);
     useEffect(() => setTitle(props.title), [])
