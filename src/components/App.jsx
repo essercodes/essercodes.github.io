@@ -16,7 +16,7 @@ import TitleContext from "../contexts/TitleContext.js";
 function App() {
     const [theme, setTheme] = useState('dark');  // TODO: get theme
     const [title, setTitle] = useState('');
-    const [shortTitle, setShortTitle] = useState('');
+    const [compactTitle, setCompactTitle] = useState('');
 
     // Set transition after page is loaded for when color scheme is switched.
     useEffect(() => {
@@ -25,7 +25,7 @@ function App() {
 
     return (
         <ThemeContext.Provider value={[theme, setTheme]}>
-            <TitleContext.Provider value={[title, shortTitle, setTitle, setShortTitle]}>
+            <TitleContext.Provider value={[compactTitle, setCompactTitle]}>
                 <script src="https://unpkg.com/feather-icons"></script>
                 <div className={`${theme}`} id="App">
                     <HashRouter basename="/">

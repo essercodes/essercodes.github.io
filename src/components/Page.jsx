@@ -5,27 +5,21 @@ import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
 function Page(props) {
-    if (props.title === undefined) {
-        throw new Error("props.text undefined.")
-    }
-    if (props.path === undefined) {
-        throw new Error("props.path undefined.")
-    }
+    if (props.compactTitle === undefined) { throw new Error("props.compactTitle not set")}
+    if (props.path === undefined) { throw new Error("props.path not set")}
 
-    const [title, titleShort, setTitle, setTitleShort] = useContext(TitleContext);
+    console.assert(props.compactTitle.length <= 5, "compactTitle will not fit on small device header");
 
-    // Make the home button active in bootstrap nav on page load
-    const landing_page_navlink_id = `${props.path ?? "Home"}-Button`;
-    useEffect(() => {
-        document.getElementById(landing_page_navlink_id).click()
-    }, [])
-
+    const [compactTitle,  setCompactTitle] = useContext(TitleContext);
     const [theme, _] = useContext(ThemeContext);
 
+    // Make the home button active in bootstrap nav on page load
+    const landing_page_navlink_id = `${props.path }-Button`;
     useEffect(() => {
-        setTitle(props.title);
-        setTitleShort(props.titleShort ?? props.title);
+        document.getElementById(landing_page_navlink_id).click()
+        setCompactTitle(props.compactTitle);
     }, [])
+
 
     return <>
         <div id="page" className={`${theme} main-body`}>

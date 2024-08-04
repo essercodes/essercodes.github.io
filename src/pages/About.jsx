@@ -2,7 +2,7 @@ import React from "react";
 import Page from "../components/Page.jsx";
 
 function About() {
-    return <Page title="About" path="about">
+    return <Page compactTitle="About" path="about">
         <h1>ABOUT CONTENT</h1>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum

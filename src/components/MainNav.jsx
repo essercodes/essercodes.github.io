@@ -10,7 +10,7 @@ import TitleContext from "../contexts/TitleContext.js";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
-    const [title, titleShort, setTitle, setTitleShort] = useContext(TitleContext);
+    const [compactTitle, setCompactTitle] = useContext(TitleContext);
 
     const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');
@@ -40,7 +40,7 @@ function MainNav() {
                 variant={theme}
             >
                 <div className="title d-md-none d-block">
-                    <Letters className="nav-letter" text={titleShort}/>
+                    <Letters className="nav-letter" text={compactTitle}/>
                 </div>
                 <div onClick={themeSwitch} id="center-logo" className="d-md-none d-block mx-auto">
                     {/*Hidden only on sm*/}
@@ -73,6 +73,7 @@ function MainNav() {
 export default MainNav;
 
 function MyNavLink(props) {
+    console.assert(props.title.length <= 13, "title does not fit on compact screen");
 
     // hide title when larger than or equal to bootstrap md
     const rmSlash = (str) => (str[0] === '/') ? str.slice(1) : str;

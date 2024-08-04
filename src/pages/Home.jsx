@@ -21,7 +21,7 @@ class ContactCard extends React.Component {
 }
 
 function Home() {
-    return <Page title="Home" path="/">
+    return <Page compactTitle="Home" path="/">
         <h1>Links</h1>
         <Container>
             <Row>
