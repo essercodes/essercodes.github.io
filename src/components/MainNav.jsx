@@ -8,13 +8,10 @@ import BulbSvg from "/public/bulb.svg?react";
 import Letters from "./Letters.jsx";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
-import MyNavLink from "./MyNavLink.jsx";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
     const [title, _] = useContext(TitleContext);
-    const landing_page_navlink_id = "Home-Button";
-
 
     const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');
@@ -33,11 +30,6 @@ function MainNav() {
             }
         });
     }
-
-    // Make the home button active in bootstrap nav
-    useEffect(() => {
-        document.getElementById(landing_page_navlink_id).click()
-    }, [])
 
     return (
         <div>
@@ -65,7 +57,6 @@ function MainNav() {
                 </Navbar.Brand>
                 <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse>
-                    {/* todo: make these 3 into a component */}
                     <Nav>
                         <MyNavLink title="Home" to="/" eventKey="home"/>
                         <MyNavLink title="About" to="about" eventKey="about"/>
@@ -81,3 +72,21 @@ function MainNav() {
 }
 
 export default MainNav;
+
+// props.title must match Page props.title
+function MyNavLink(props) {
+    const [title, _] = useContext(TitleContext);
+
+    // hide when smaller less than or equal to bootstrap md
+    const hideClass = title === props.title ? "d-none d-md-block d-none" : "";
+
+    return <Nav.Link
+        id={`${props.title}-Button`}
+        className={`my-navlink ${hideClass}`}
+        as={Link}
+        to={props.to}
+        eventKey={props.eventKey}
+    >
+        <Letters className="nav-letter" text={props.title}/>
+    </Nav.Link>
+}

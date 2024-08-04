@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import Letters from "./Letters.jsx";
 import TitleContext from "../contexts/TitleContext.js";
 
-// props.title must match Page props.title
 function MyNavLink(props) {
     const [title, _] = useContext(TitleContext);
 
