@@ -4,16 +4,18 @@ import React, {useContext, useEffect} from "react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
-// props.title must match MyNavLink props.title
 function Page(props) {
     if (props.title === undefined) {
         throw new Error("props.text undefined.")
+    }
+    if (props.path === undefined) {
+        throw new Error("props.path undefined.")
     }
 
     const [title, titleShort, setTitle, setTitleShort] = useContext(TitleContext);
 
     // Make the home button active in bootstrap nav on page load
-    const landing_page_navlink_id = `${props.title ?? "Home"}-Button`;
+    const landing_page_navlink_id = `${props.path ?? "Home"}-Button`;
     useEffect(() => {
         document.getElementById(landing_page_navlink_id).click()
     }, [])

@@ -2,7 +2,7 @@ import React from "react";
 import Page from "../components/Page.jsx";
 
 function Experience() {
-    return <Page title="Experience" titleShort="EXP">
+    return <Page title="Experience" titleShort="EXP" path="experience">
         <h1>RESUME CONTENT</h1>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum

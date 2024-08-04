@@ -72,15 +72,15 @@ function MainNav() {
 
 export default MainNav;
 
-// props.title must match Page props.title
 function MyNavLink(props) {
-    const [title, _] = useContext(TitleContext);
 
-    // hide when smaller less than or equal to bootstrap md
-    const hideClass = title === props.title ? "d-none d-md-block d-none" : "";
+    // hide title when larger than or equal to bootstrap md
+    const rmSlash = (str) => (str[0] === '/') ? str.slice(1) : str;
+    const pathname = window.location.href.split('#')[1];
+    const hideClass = rmSlash(pathname) === rmSlash(props.to) ? "d-none d-md-block" : "";
 
     return <Nav.Link
-        id={`${props.title}-Button`}
+        id={`${props.to}-Button`}
         className={`my-navlink ${hideClass}`}
         as={Link}
         to={props.to}
