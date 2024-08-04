@@ -7,13 +7,14 @@ function Letters(props) {
     }
     return <Row>
         {props.text.split("").map((char, i) => {
-            {
-                if (" " === char) {
-                    return <Col key={props.text + "-" + i} className={[props.className, 'px-2'].join(" ")}>{char}</Col>
-                } else {
-                    return <Col key={props.text + "-" + i} className={[props.className, 'px-0'].join(" ")}>{char}</Col>
-                }
-            }
+            const horizontal_spacing = " " === char ? 'px-2' : 'px-0'
+            return <Col
+                key={props.text + "-" + i}
+                id={props.text + "-" + i}
+                className={[props.className, horizontal_spacing].join(" ")}
+            >
+                {char}
+            </Col>
         })}
     </Row>
 }
