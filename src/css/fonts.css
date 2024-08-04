@@ -1,0 +1,29 @@
+@import "monaspace.css";
+
+/* https://ggbot.itch.io/3d-isometric-font */
+@font-face {
+    font-family: "3DIsometric-Regular";
+    src:
+            url("../fonts/3DIsometric/woff/3DIsometric-Regular.woff2") format("woff2"),
+            url("../fonts/3DIsometric/woff/3DIsometric-Regular.woff") format("woff"),
+            url("../fonts/3DIsometric/opentype/3DIsometric-Regular.otf") format("opentype"),
+            url("../fonts/3DIsometric/truetype/3DIsometric-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "3DIsometric-Bold";
+    src:
+            url("../fonts/3DIsometric/woff/3DIsometric-Bold.woff2") format("woff2"),
+            url("../fonts/3DIsometric/woff/3DIsometric-Bold.woff") format("woff"),
+            url("../fonts/3DIsometric/opentype/3DIsometric-Bold.otf") format("opentype"),
+            url("../fonts/3DIsometric/truetype/3DIsometric-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "3DIsometric-Black";
+    src:
+            url("../fonts/3DIsometric/woff/3DIsometric-Black.woff2") format("woff2"),
+            url("../fonts/3DIsometric/woff/3DIsometric-Black.woff") format("woff"),
+            url("../fonts/3DIsometric/opentype/3DIsometric-Black.otf") format("opentype"),
+            url("../fonts/3DIsometric/truetype/3DIsometric-Black.ttf") format("truetype");
+}

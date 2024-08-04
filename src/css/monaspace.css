@@ -1,0 +1,10 @@
+/* https://github.com/githubnext/monaspace/ */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#common_weight_name_mapping */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-stretch */
+/* https://stackoverflow.com/questions/39693837/how-do-i-use-github-to-host-a-webfont */
+
+@import "monaspace/MonaspaceArgon.css";
+@import "monaspace/MonaspaceKrypton.css";
+@import "monaspace/MonaspaceNeon.css";
+@import "monaspace/MonaspaceRadon.css";
+@import "monaspace/MonaspaceXenon.css";

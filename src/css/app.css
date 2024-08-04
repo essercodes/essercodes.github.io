@@ -1,0 +1,17 @@
+@import url("gruvbox.css");
+
+:root {
+    background-color: var(--bg);
+    --root-transition: none;  /* Updated on page load. */
+    transition:       var(--root-transition);
+}
+
+body {
+    background-color: transparent !important;
+}
+
+
+
+#main-outlet {
+    margin: 5rem 1rem;
+}

@@ -1,0 +1,104 @@
+:root {
+    --menu-title-pad: 1.1rem;
+}
+
+/* Light mode menu colors */
+.light .fixed-navbar,
+.light .navbar-nav {
+    background-color: var(--bg0_s);
+}
+
+/* Dark mode menu colors */
+.dark .fixed-navbar,
+.dark .navbar-nav {
+    background-color: var(--bg0_h);
+}
+
+/* expanded navbar alignment */
+div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
+    margin-right: 3rem;
+    padding:      0;
+}
+
+/* Compact navbar element alignment */
+.title {
+    flex:        1;
+    margin-left: var(--menu-title-pad);
+    padding:     0 .5rem;
+}
+
+#center-logo {
+    flex:   1;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+    color:        transparent !important;
+}
+
+
+/* Shift items in nav when menu open and < to bootstrap md (768px) var(--bs-breakpoint-md does not work.*/
+@media (max-width: 768px) {
+    .navbar-collapse.collapsing > .navbar-nav > .my-navlink.nav-link,
+    .navbar-collapse.collapse.show > .navbar-nav > .my-navlink.nav-link { /* gt bootstrap md size */
+        padding:     0 .5rem;
+        margin-left: var(--menu-title-pad);
+    }
+
+}
+
+@media (min-width: 767px) {
+    /* fixes transition artifact when navbar is open, window is expanded, and navlink is selected. */
+    .navbar-collapse.collapsing {
+        height:     inherit;
+        transition: none;
+    }
+}
+
+/* Link and Title Fonts */
+.title,
+.my-navlink.nav-link {
+    font-family:   "3DIsometric-Regular", serif;
+    font-size:     2.3rem;
+    line-height:   1;
+    margin-top:    .25rem;
+    margin-bottom: .25rem;
+}
+
+.title,
+.my-navlink.nav-link:hover,
+.my-navlink.nav-link.active {
+    font-family: "3DIsometric-Bold", serif;
+}
+
+/* Link an Title Colors */
+.my-navlink.nav-link:hover * {
+    color: var(--gray-pri);
+}
+
+.title,
+.my-navlink.nav-link:link *, .my-navlink.nav-link:visited * {
+    color: var(--gray-sec);
+}
+
+.title,
+.my-navlink.nav-link:link.active *, .my-navlink.nav-link:visited.active * {
+    color: var(--green-pri);
+}
+
+.my-navlink.nav-link:hover.active * {
+    color: var(--green-sec);
+}
+
+/* Keep words from wrapping, letters are individual elements */
+.title > div.row,
+a.my-navlink > div.row {
+    flex-wrap: nowrap;
+}
+
+.title > div.row > div.nav-letter,
+a.my-navlink > div.row > div.nav-letter {
+    flex-grow:  0;
+    flex-basis: 0;
+}
+

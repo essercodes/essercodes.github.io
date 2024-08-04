@@ -1,0 +1,18 @@
+.logo {
+    height: 2.5rem;
+    width:  2.5rem;
+}
+
+.navbar-brand {
+    width: 4rem;
+}
+
+.light .logo {
+    stroke: var(--gray-pri);
+    fill:   #FABD2F;
+}
+
+.dark .logo {
+    stroke: #FABD2F;
+    fill:   none;
+}

@@ -1,0 +1,32 @@
+#page {
+    color:       var(--fg1);
+    font-family: "Monaspace Xenon", sans-serif;
+
+
+    a {
+        color: var(--blue-pri);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family:  "Monaspace Krypton", sans-serif;
+        font-stretch: semi-expanded;
+    }
+
+    h1 { color: var(--aqua-pri); }
+
+    h2 { color: var(--blue-pri); }
+
+    h3 { color: var(--purple-pri); }
+
+    h4 { color: var(--orange-pri); }
+
+    h5 { color: var(--yellow-pri); }
+
+    h6 { color: var(--red-pri); }
+
+
+    .code {
+        font-family: "Monaspace Neon", sans-serif;
+    }
+
+}

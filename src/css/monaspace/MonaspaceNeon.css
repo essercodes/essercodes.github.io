@@ -1,0 +1,419 @@
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Bold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Bold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceNeon-Bold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: normal;
+    font-weight:  bold;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-BoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-BoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceNeon-BoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: normal;
+    font-weight:  bold;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceNeon-ExtraBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: normal;
+    font-weight:  800;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceNeon-ExtraBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: normal;
+    font-weight:  800;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraLight.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraLight.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/otf/MonaspaceNeon-ExtraLight.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: normal;
+    font-weight:  200;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraLightItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-ExtraLightItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-ExtraLightItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: normal;
+    font-weight:  200;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Italic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Italic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-Italic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: normal;
+    font-weight:  normal;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Light.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Light.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-Light.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: normal;
+    font-weight:  300;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-LightItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-LightItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-LightItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: normal;
+    font-weight:  300;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Medium.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Medium.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-Medium.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: normal;
+    font-weight:  500;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-MediumItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-MediumItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-MediumItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: normal;
+    font-weight:  500;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Regular.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-Regular.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-Regular.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: normal;
+    font-weight:  normal;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: normal;
+    font-weight:  600;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: normal;
+    font-weight:  600;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: semi-expanded;
+    font-weight:  bold;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: semi-expanded;
+    font-weight:  bold;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideExtraBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideExtraBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideExtraBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: semi-expanded;
+    font-weight:  800;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideExtraBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideExtraBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideExtraBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: semi-expanded;
+    font-weight:  800;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideExtraLight.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideExtraLight.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideExtraLight.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: semi-expanded;
+    font-weight:  200;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraLightItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraLightItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideExtraLightItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: semi-expanded;
+    font-weight:  200;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: semi-expanded;
+    font-weight:  normal;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideLight.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideLight.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideLight.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: semi-expanded;
+    font-weight:  300;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideLightItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideLightItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideLightItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: semi-expanded;
+    font-weight:  300;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideMedium.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideMedium.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideMedium.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: semi-expanded;
+    font-weight:  500;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideMediumItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideMediumItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideMediumItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: semi-expanded;
+    font-weight:  500;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideRegular.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideRegular.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideRegular.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: semi-expanded;
+    font-weight:  normal;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideSemiBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideSemiBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideSemiBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: semi-expanded;
+    font-weight:  600;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideSemiBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-SemiWideSemiBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-SemiWideSemiBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: semi-expanded;
+    font-weight:  600;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: expanded;
+    font-weight:  bold;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: expanded;
+    font-weight:  bold;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideExtraBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: expanded;
+    font-weight:  bold;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideExtraBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: expanded;
+    font-weight:  800;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraLight.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraLight.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideExtraLight.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: expanded;
+    font-weight:  200;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraLightItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideExtraLightItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideExtraLightItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: expanded;
+    font-weight:  200;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: expanded;
+    font-weight:  normal;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideLight.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideLight.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideLight.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: expanded;
+    font-weight:  300;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideLightItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideLightItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideLightItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: expanded;
+    font-weight:  300;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideMedium.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideMedium.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideMedium.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: expanded;
+    font-weight:  500;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideMediumItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideMediumItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideMediumItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: expanded;
+    font-weight:  500;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideRegular.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideRegular.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideRegular.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: expanded;
+    font-weight:  normal;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideSemiBold.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideSemiBold.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideSemiBold.otf") format("opentype");
+    font-style:   normal;
+    font-stretch: expanded;
+    font-weight:  600;
+}
+
+@font-face {
+    font-family:  "Monaspace Neon";
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideSemiBoldItalic.woff2") format("woff2");
+    src:          url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/webfonts/MonaspaceNeon-WideSemiBoldItalic.woff") format("woff"),
+                  url("https://cdn.rawgit.com/githubnext/monaspace/main/fonts/oft/MonaspaceNeon-WideSemiBoldItalic.otf") format("opentype");
+    font-style:   italic;
+    font-stretch: expanded;
+    font-weight:  600;
+}
