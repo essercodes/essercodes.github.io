@@ -11,8 +11,7 @@ import MailIcon from "bootstrap-icons/icons/mailbox.svg?react"
 
 class ContactCard extends React.Component {
     render() {
-        const cardCol = {xs: 4, md: 2, xxl: 1};
-        return <Col {...cardCol} className="contact-card">
+        return <Col xs={4} md={3} lg={2} className="contact-card">
             <Card as="a" href={this.props.href} className="link-card mx-auto">
                 <Card.Img as={this.props.as} alt={this.props.alt} className="contact-icon"/>
             </Card>

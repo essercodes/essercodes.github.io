@@ -3,7 +3,7 @@ import '../css/logo.css'
 
 import React, {useContext, useEffect} from "react";
 import {Navbar, Nav, Container, Row, Col,} from "react-bootstrap";
-import {Link, Outlet} from "react-router-dom";
+import {Link, matchPath, Outlet, useLocation} from "react-router-dom";
 import BulbSvg from "../assets/logoBulb.svg?react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
@@ -77,7 +77,7 @@ function MyNavLink(props) {
 
     // hide title when larger than or equal to bootstrap md
     const rmSlash = (str) => (str[0] === '/') ? str.slice(1) : str;
-    const pathname = window.location.href.split('#')[1];
+    const pathname = useLocation().pathname;
     const hideClass = rmSlash(pathname) === rmSlash(props.to) ? "d-none d-md-block" : "";
 
     return <Nav.Link
