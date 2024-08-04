@@ -2,14 +2,13 @@ import '../css/navbar.css'
 import '../css/logo.css'
 
 import React, {useContext, useEffect} from "react";
-import {Navbar, Nav, Container, Row,} from "react-bootstrap";
+import {Navbar, Nav, Container, Row, Col,} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
 import BulbSvg from "/public/bulb.svg?react";
-import Letters from "./Letters.jsx";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
-function MainNav() {
+function Nav() {
     const [theme, setTheme] = useContext(ThemeContext);
     const [title, _] = useContext(TitleContext);
 
@@ -71,7 +70,7 @@ function MainNav() {
     )
 }
 
-export default MainNav;
+export default Nav;
 
 // props.title must match Page props.title
 function MyNavLink(props) {
@@ -89,4 +88,22 @@ function MyNavLink(props) {
     >
         <Letters className="nav-letter" text={props.title}/>
     </Nav.Link>
+}
+
+function Letters(props) {
+    if (props.text === undefined) {
+        throw new Error("props.text not set.")
+    }
+    return <Row>
+        {props.text.split("").map((char, i) => {
+            const horizontal_spacing = " " === char ? 'px-2' : 'px-0'
+            return <Col
+                key={props.text + "-" + i}
+                id={props.text + "-" + i}
+                className={[props.className, horizontal_spacing].join(" ")}
+            >
+                {char}
+            </Col>
+        })}
+    </Row>
 }

@@ -4,7 +4,7 @@ import '../css/fonts.css'
 import {useEffect, useState} from "react";
 import {HashRouter, Routes, Route} from "react-router-dom"
 
-import MainNav from "./MainNav"
+import Nav from "./Nav.jsx"
 
 import Home from "../pages/Home.jsx"
 import About from "../pages/About.jsx"
@@ -29,7 +29,7 @@ function App() {
                 <div className={`${theme}`} id="App">
                     <HashRouter basename="/">
                         <Routes>
-                            <Route path="/" element={<MainNav/>}>
+                            <Route path="/" element={<Nav/>}>
                                 <Route index element={<Home/>}/>
                                 <Route path="/about" element={<About/>}/>
                                 <Route path="/xp" element={<XP/>}/>
