@@ -1,5 +1,6 @@
 import '../css/pages/home.css';
 
+import React from "react";
 import Page from "../components/Page.jsx";
 import {Card, Col, Container, Row} from "react-bootstrap";
 
