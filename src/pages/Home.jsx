@@ -1,55 +1,44 @@
-import React from "react";
+import React, {useContext} from "react";
 import Page from "../components/Page.jsx";
+import {Card, Col, Container, Image, Row} from "react-bootstrap";
+
+import ThemeContext from "../contexts/ThemeContext.js";
+
+// imports with vite-plugin-svgr
+import GithubIcon from "bootstrap-icons/icons/github.svg?react";
+import LinkedInIcon from "bootstrap-icons/icons/linkedin.svg?react";
+import MailIcon from "bootstrap-icons/icons/mailbox.svg?react"
 
 function Home() {
+    const [theme, setTheme] = useContext(ThemeContext);
+    const cardCol = {xs: 4, md: 2, xxl: 1};
+
     return <Page title="Home">
-        <h1>HOME CONTENT</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
-            nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae; Sed sed nisl semper diam egestas vestibulum ac quis felis. Suspendisse vel viverra ipsum.
-            In semper elit mi, id efficitur lacus suscipit vel. Mauris venenatis tellus non enim eleifend, lacinia
-            rutrum enim porta. Quisque pellentesque hendrerit lacus, a posuere quam iaculis ut. Praesent bibendum
-            nibh eu leo aliquam, non placerat sapien semper. Integer tincidunt enim sit amet odio laoreet suscipit.
-            Vivamus sit amet dictum mi. Cras id interdum mi, nec lobortis ipsum. Pellentesque odio mi, lobortis
-            vitae felis non, fermentum dignissim mauris. Duis sodales nibh at magna luctus, quis viverra nisi
-            consectetur. Integer hendrerit nisl et turpis accumsan volutpat. Fusce euismod elit dui, sed mollis odio
-            efficitur id.</p>
-        <h2>HOME CONTENT</h2>
-        <p>Praesent elit libero, imperdiet ut consequat eu, rutrum pellentesque sem. Curabitur massa diam, elementum
-            non risus ac, rutrum porta nisi. Quisque nec dignissim mi. Vestibulum velit leo, ullamcorper a odio sit
-            amet, consequat consequat quam. Suspendisse blandit elit et arcu laoreet ultrices. Ut porta purus
-            turpis, in lacinia augue ultricies sit amet. Nunc et imperdiet est. Nam aliquam enim vel turpis euismod
-            bibendum. In ex enim, maximus non ipsum quis, vehicula fringilla risus. Fusce ut maximus erat.</p>
-        <h3>HOME CONTENT</h3>
-        <p>Sed vel pulvinar ante. Nunc lobortis elit ante, ut gravida neque rutrum quis. Morbi vitae condimentum
-            felis. In elementum dolor imperdiet ante mollis eleifend. Sed placerat enim nec euismod imperdiet. Proin
-            id libero non magna tincidunt volutpat. Proin a condimentum dui, id gravida nibh. Sed at nisl quis nunc
-            molestie bibendum. Aliquam sed tincidunt justo, nec posuere odio. Maecenas quis hendrerit ipsum. Duis
-            sed condimentum magna.</p>
-        <h4>HOME CONTENT</h4>
-        <p>Praesent finibus lacinia malesuada. Duis suscipit justo ante, et sollicitudin magna ullamcorper ac.
-            Quisque venenatis mi risus, eu fringilla nisi ornare et. Donec id erat sed lorem rutrum laoreet. Mauris
-            nec ex venenatis, lobortis sapien ac, mattis risus. Suspendisse id metus est. Morbi in odio non elit
-            imperdiet finibus eleifend sed orci. Donec in porta tellus. Cras volutpat, urna et placerat tincidunt,
-            leo metus dapibus nibh, non bibendum ante dui vitae dolor. Cras felis ligula, pretium vitae ultrices at,
-            fringilla ac turpis. Sed lobortis nec dolor quis dictum.</p>
-        <h5>HOME CONTENT</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum
-            nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae; Sed sed nisl semper diam egestas vestibulum ac quis felis. Suspendisse vel viverra ipsum.
-            In semper elit mi, id efficitur lacus suscipit vel. Mauris venenatis tellus non enim eleifend, lacinia
-            rutrum enim porta. Quisque pellentesque hendrerit lacus, a posuere quam iaculis ut. Praesent bibendum
-            nibh eu leo aliquam, non placerat sapien semper. Integer tincidunt enim sit amet odio laoreet suscipit.
-            Vivamus sit amet dictum mi. Cras id interdum mi, nec lobortis ipsum. Pellentesque odio mi, lobortis
-            vitae felis non, fermentum dignissim mauris. Duis sodales nibh at magna luctus, quis viverra nisi
-            consectetur. Integer hendrerit nisl et turpis accumsan volutpat. Fusce euismod elit dui, sed mollis odio
-            efficitur id.</p>
-        <h6>HOME CONTENT</h6>
-        <p>Praesent elit libero, imperdiet ut consequat eu, rutrum pellentesque sem. Curabitur massa diam, elementum
-            non risus ac, rutrum porta nisi. Quisque nec dignissim mi. Vestibulum velit leo, ullamcorper a odio sit
-            amet, consequat consequat quam. Suspendisse blandit elit et arcu laoreet ultrices. Ut porta purus
-            turpis, in lacinia augue ultricies sit amet. Nunc et imperdiet est. Nam aliquam enim vel turpis euismod
-            bibendum. In ex enim, maximus non ipsum quis, vehicula fringilla risus. Fusce ut maximus erat.</p>
+        <h1>Links</h1>
+        <Container>
+            <Row>
+                <Col {...cardCol}>
+                    <Card as='a' href="https://www.linkedin.com/in/maxesser/"  className="link-card mx-auto">
+                        <Card.Title className="contact-title contact-text">LinkedIn</Card.Title>
+                        <Card.Img as={LinkedInIcon} alt="LinkedIn Logo that links to Max Esser" className="contact-icon"/>
+                    </Card>
+                </Col>
+                <Col {...cardCol}>
+                    <Card as='a' href="https://github.com/essercodes"
+                        className="link-card mx-auto">
+                        <Card.Img as={GithubIcon} alt="Github Logo that links to @essercodes" className="contact-icon"/>
+                    </Card>
+                </Col>
+                <Col {...cardCol}>
+                    {/*href="mailto:max@esser.codes*/}
+                    <Card as='a' href="mailto:max@esser.codes" className="link-card mx-auto">
+                        <Card.Img as={MailIcon} alt="An image of a mailbox that links to sending an email." className="contact-icon"/>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
+
+
     </Page>
 }
 

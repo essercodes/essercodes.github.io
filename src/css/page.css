@@ -2,20 +2,56 @@
     color:       var(--fg1);
     font-family: "Monaspace Xenon", sans-serif;
 
+    a {
+        color: var(--blue-pri);
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-family:  "Monaspace Krypton", sans-serif;
         font-stretch: semi-expanded;
     }
 
     h1 { color: var(--aqua-pri); }
+
     h2 { color: var(--blue-pri); }
+
     h3 { color: var(--purple-pri); }
+
     h4 { color: var(--orange-pri); }
+
     h5 { color: var(--yellow-pri); }
+
     h6 { color: var(--red-pri); }
 
 
     .code {
         font-family: "Monaspace Neon", sans-serif;
     }
+
+    .link-card {
+        width: 6rem;
+        height: 6rem;
+        padding: 1rem;
+        margin: 1rem 2rem;
+        background-color: var(--bg2);
+        color: var(--fg1);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-text {
+        font-size: .6rem;
+        top: 0.1rem;
+        left: 0.1rem;
+    }
+
+    .contact-title {
+        position: absolute;
+    }
+    .contact-icon {
+        color: var(--fg0);
+        width: 100%;
+        height: 100%;
+    }
+
 }
