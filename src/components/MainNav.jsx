@@ -8,7 +8,7 @@ import BulbSvg from "/public/bulb.svg?react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
-function Nav() {
+function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
     const [title, _] = useContext(TitleContext);
 
@@ -70,7 +70,7 @@ function Nav() {
     )
 }
 
-export default Nav;
+export default MainNav;
 
 // props.title must match Page props.title
 function MyNavLink(props) {
