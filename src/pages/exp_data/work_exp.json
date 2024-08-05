@@ -1,0 +1,35 @@
+[
+  {
+    "where": "Union Cab of Madison Cooperative",
+    "title": "IT Manager",
+    "when": "Jan 2016 - Current",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sed nisl semper diam egestas vestibulum ac quis felis. Suspendisse vel viverra ipsum. In semper elit mi, id efficitur lacus suscipit vel.",
+    "bullets": [
+      "Lorem ipsum praesent elit libero, imperdiet ut consequat eu, rutrum pellentesque sem. Curabitur massa diam, elementum non risus ac, rutrum porta nisi. Quisque nec dignissim mi.",
+      "Lorem ipsum vestibulum velit leo, ullamcorper a odio sit amet, consequat consequat quam. Suspendisse blandit elit et arcu laoreet ultrices.",
+      "Lorem ipsum ut porta purus turpis, in lacinia augue ultricies sit amet."
+    ]
+  },
+  {
+    "where": "Union Cab of Madison Cooperative",
+    "title": "Board Director",
+    "when": "Sept 2018 - Aug 2020",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sed nisl semper diam egestas vestibulum ac quis felis. Suspendisse vel viverra ipsum. In semper elit mi, id efficitur lacus suscipit vel.",
+    "bullets": [
+      "Lorem ipsum praesent elit libero, imperdiet ut consequat eu, rutrum pellentesque sem. Curabitur massa diam, elementum non risus ac, rutrum porta nisi. Quisque nec dignissim mi.",
+      "Lorem ipsum vestibulum velit leo, ullamcorper a odio sit amet, consequat consequat quam. Suspendisse blandit elit et arcu laoreet ultrices.",
+      "Lorem ipsum ut porta purus turpis, in lacinia augue ultricies sit amet."
+    ]
+  },
+  {
+    "where": "Union Cab of Madison Cooperative",
+    "title": "IT Technical Support",
+    "when": "Mar 2013 - Jan 2016",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget turpis sem. Curabitur vestibulum nibh sit amet lobortis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sed nisl semper diam egestas vestibulum ac quis felis. Suspendisse vel viverra ipsum. In semper elit mi, id efficitur lacus suscipit vel.",
+    "bullets": [
+      "Lorem ipsum praesent elit libero, imperdiet ut consequat eu, rutrum pellentesque sem. Curabitur massa diam, elementum non risus ac, rutrum porta nisi. Quisque nec dignissim mi.",
+      "Lorem ipsum vestibulum velit leo, ullamcorper a odio sit amet, consequat consequat quam. Suspendisse blandit elit et arcu laoreet ultrices.",
+      "Lorem ipsum ut porta purus turpis, in lacinia augue ultricies sit amet."
+    ]
+  }
+]
