@@ -3,7 +3,7 @@
 }
 
 .fixed-navbar.navbar {
-    border-bottom: .1rem var(--green-pri) solid;
+    border-bottom: 0.08rem var(--green-pri) solid;
 }
 
 /* Light mode menu colors */
