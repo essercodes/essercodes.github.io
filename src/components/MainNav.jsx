@@ -1,16 +1,16 @@
 import '../css/navbar.css'
 import '../css/logo.css'
 
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 import {Navbar, Nav, Container, Row, Col,} from "react-bootstrap";
-import {Link, matchPath, Outlet, useLocation} from "react-router-dom";
+import {Link, Outlet, useLocation} from "react-router-dom";
 import BulbSvg from "../assets/logoBulb.svg?react";
 import ThemeContext from "../contexts/ThemeContext.js";
 import TitleContext from "../contexts/TitleContext.js";
 
 function MainNav() {
     const [theme, setTheme] = useContext(ThemeContext);
-    const [compactTitle, setCompactTitle] = useContext(TitleContext);
+    const [compactTitle, _] = useContext(TitleContext);
 
     const setBackgroundToCssProp = (prop) => {
         const app_elem = document.getElementById('App');
@@ -42,15 +42,15 @@ function MainNav() {
                 <div className="title d-md-none d-block">
                     <Letters className="nav-letter" text={compactTitle}/>
                 </div>
-                <div onClick={themeSwitch} id="center-logo" className="d-md-none d-block mx-auto">
+                <div id="center-logo" className="d-md-none d-block mx-auto">
                     {/*Hidden only on sm*/}
-                    <BulbSvg className="logo"/>
+                    <BulbSvg onClick={themeSwitch} className="logo"/>
                 </div>
                 <Navbar.Brand className="d-none d-md-block d-none">
                     <Container>
-                        <Row onClick={themeSwitch}>
+                        <Row >
                             {/* Visible only on sm */}
-                            <BulbSvg className="logo"/>
+                            <BulbSvg onClick={themeSwitch} className="logo"/>
                         </Row>
                     </Container>
                 </Navbar.Brand>
