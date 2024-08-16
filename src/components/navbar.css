@@ -32,7 +32,7 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
 }
 
 #center-logo {
-    flex:   1;
+    flex: 1;
 }
 
 .navbar-toggler {
@@ -40,8 +40,13 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
     color:        transparent !important;
 }
 
+.navbar-collapse.collapsing {
+    height:     inherit;
+    transition: none;
+}
 
 /* Shift items in nav when menu open and < to bootstrap md (768px) var(--bs-breakpoint-md does not work.*/
+/* @include media-breakpoint-down(md) { */
 @media (max-width: 768px) {
     .navbar-collapse.collapsing > .navbar-nav > .my-navlink.nav-link,
     .navbar-collapse.collapse.show > .navbar-nav > .my-navlink.nav-link { /* gt bootstrap md size */
@@ -49,14 +54,6 @@ div.navbar-nav > a.my-navlink.nav-link { /* gt bootstrap md size */
         margin-left: var(--menu-title-pad);
     }
 
-}
-
-@media (min-width: 767px) {
-    /* fixes transition artifact when navbar is open, window is expanded, and navlink is selected. */
-    .navbar-collapse.collapsing {
-        height:     inherit;
-        transition: none;
-    }
 }
 
 /* Link and Title Fonts */
