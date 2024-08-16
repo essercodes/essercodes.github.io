@@ -1,4 +1,4 @@
-import '../css/pages/home.css';
+import './home.css';
 
 import React from "react";
 import Page from "../components/Page.jsx";

@@ -1,0 +1,13 @@
+.exp-card.card {
+    width:   25rem;
+    height:  10rem;
+    padding: .5rem 2rem;
+}
+
+.exp-row:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+.exp-row:nth-child(even) {
+    justify-content: flex-end;
+}

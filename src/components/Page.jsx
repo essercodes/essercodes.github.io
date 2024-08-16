@@ -1,4 +1,4 @@
-import '../css/page.css';
+import './page.css';
 
 import React, {useContext, useEffect} from "react";
 import ThemeContext from "../contexts/ThemeContext.js";

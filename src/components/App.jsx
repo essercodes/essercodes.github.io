@@ -1,4 +1,4 @@
-import '../css/app.css'
+import './app.css'
 import '../css/fonts.css'
 
 import {useEffect, useState} from "react";

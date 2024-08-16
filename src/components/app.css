@@ -1,4 +1,4 @@
-@import url("gruvbox.css");
+@import url("../css/gruvbox.css");
 
 :root {
     background-color: var(--bg);

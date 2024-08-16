@@ -1,5 +1,5 @@
-import '../css/navbar.css'
-import '../css/logo.css'
+import './navbar.css'
+import './logo.css'
 
 import React, {useContext} from "react";
 import {Navbar, Nav, Container, Row, Col,} from "react-bootstrap";
