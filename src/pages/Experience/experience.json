@@ -1,46 +1,54 @@
 [
   {
     "title": "University of Wisconsin-Madison",
-    "what": "Bachelor of Science – Computer Science and Data Science",
+    "what": "BS Computer Science and Data Science",
     "where": "Madison WI",
     "start": "Jan 2021",
     "end": "May 2024",
     "meta": {
-        "length": 5,
-        "color": "var(--red-pri)"
+      "begin": 19.5,
+      "length": 6,
+      "color": "var(--red-pri)",
+      "column": 2
     }
   },
   {
-    "title": "Union Cab of Madison Cooperative",
+    "title": "Union Cab of Madison Coop.",
     "what": "Board of Directors",
     "where": "Madison WI",
     "start": "Sep 2018",
     "end": "Aug 2020",
     "meta": {
-        "length": 10,
-        "color": "var(--green-pri)"
+      "begin": 13,
+      "length": 6,
+      "color": "var(--green-pri)",
+      "column": 2
     }
   },
   {
-    "title": "Union Cab of Madison Cooperative",
+    "title": "Union Cab of Madison Coop.",
     "what": "Information Technology Manager",
     "where": "Madison WI",
     "start": "Jan 2016",
     "end": "Current",
     "meta": {
-        "length": 29,
-        "color": "var(--aqua-pri)"
+      "begin": 6.5,
+      "length": 33,
+      "color": "var(--aqua-pri)",
+      "column": 1
     }
   },
   {
-    "title": "Union Cab of Madison Cooperative",
-    "what": "Information Technology Technical Support",
+    "title": "Union Cab of Madison Coop.",
+    "what": "IT Technical Support",
     "where": "Madison WI",
     "start": "Mar 2013",
     "end": "Jan 2016",
     "meta": {
-        "length": 12,
-        "color": "var(--yellow-pri)"
+      "begin": 0,
+      "length": 13,
+      "color": "var(--yellow-pri)",
+      "column": 1
     }
   }
 ]

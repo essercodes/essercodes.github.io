@@ -4,30 +4,26 @@
 }
 
 .timeline .lines {
-    position:        absolute;
-    display:         grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    left:            50%;
-    transform:       translateX(1rem);
-    rotate:         180deg;
-    top:             1rem;
-    bottom:          6rem;
-    justify-content: center;
+    --lanes:  1;
+    position: absolute;
+    left:     50%;
+    rotate:   180deg;
+    top:      1rem;
+    bottom:   6rem;
 }
 
 .timeline .center-line {
     width:      .5rem;
     background: var(--bg2);
-    position:   relative;
-    top: 1rem;
+    position:   absolute;
 }
 
 .timeline .exp-card {
     background: var(--bg1);
     color:      var(--fg1);
-    height:     10rem;
+    height:     12rem;
     padding:    1rem 2rem;
-    margin:     1rem 0;
+    margin-top: 1rem;
     flex:       0 0 auto;
     width:      45%;
 }
@@ -47,7 +43,7 @@
 @media (max-width: 768px) {
 
     .timeline .lines {
-        left:            0rem;
+        left:            calc(var(--lanes) * .5rem);
         justify-content: end;
     }
 
