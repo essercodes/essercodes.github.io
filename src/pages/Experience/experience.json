@@ -1,10 +1,17 @@
 [
   {
-    "title": "Union Cab of Madison Cooperative",
-    "what": "Information Technology Technical Support",
+    "title": "University of Wisconsin-Madison",
+    "what": "Bachelor of Science – Computer Science and Data Science",
     "where": "Madison WI",
-    "start": "Mar 2013",
-    "end": "Jan 2016"
+    "start": "Jan 2021",
+    "end": "May 2024"
+  },
+  {
+    "title": "Union Cab of Madison Cooperative",
+    "what": "Board of Directors",
+    "where": "Madison WI",
+    "start": "Sep 2018",
+    "end": "Aug 2020"
   },
   {
     "title": "Union Cab of Madison Cooperative",
@@ -15,16 +22,9 @@
   },
   {
     "title": "Union Cab of Madison Cooperative",
-    "what": "Board of Directors",
+    "what": "Information Technology Technical Support",
     "where": "Madison WI",
-    "start": "Sep 2018",
-    "end": "Aug 2020"
-  },
-  {
-    "title": "University of Wisconsin-Madison",
-    "what": "Bachelor of Science – Computer Science and Data Science",
-    "where": "Madison WI",
-    "start": "Jan 2021",
-    "end": "May 2024"
+    "start": "Mar 2013",
+    "end": "Jan 2016"
   }
 ]

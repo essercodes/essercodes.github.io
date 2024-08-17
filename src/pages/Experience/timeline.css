@@ -1,25 +1,30 @@
 .timeline {
     margin:   1rem;
-    padding:  2rem;
     position: relative;
 }
 
+.timeline .lines {
+    position: absolute;
+    display:  flex;
+    width:    4rem;
+    left:     50%;
+    transform: translateX(-2rem);
+    top:      1rem;
+    bottom:   0rem;
+    justify-content: center;
+}
+
 .timeline .center-line {
-    position:   absolute;
-    height:     100%;
     width:      .3rem;
     background: var(--bg2);
-    left:       50%;
-    top:        1rem;
-    bottom:     1rem;
-    transform:  translateX(-50%);
+    position:   relative;
 }
 
 .timeline .exp-card {
     background: var(--bg1);
     color:      var(--fg1);
-    height:     10rem;
-    padding:    .5rem 2rem;
+    height:     11rem;
+    padding:    1rem 2rem;
     margin-top: 1rem;
     flex:       0 0 auto;
     width:      45%;
@@ -38,8 +43,10 @@
 
 
 @media (max-width: 768px) {
-    .timeline .center-line {
-        left: .8rem;
+
+    .timeline .lines {
+        left: 0rem;
+        justify-content: end;
     }
 
     .timeline .exp-card {

@@ -1,15 +1,41 @@
 import './timeline.css'
 
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {Card, Col, Container, Row} from "react-bootstrap";
 
 function Timeline(props) {
+    const [lines, setLines] = useState({
+        length: 0,
+        segments: [],
+    })
+    useEffect(() => {
+        setLines(() => {
+            const newSegments = props.data.map((exp, i) => ({
+                start: i,
+                end: 12,
+            }));
+            const newLength = newSegments.length * 12;
+            return {
+                segments: newSegments,
+                length: newLength,
+            };
+        });
+    }, [props.data]);
+    console.log(lines)
     return <Container className="timeline">
-        <div className="center-line">
-            <a href="#" className="scroll-icon"><i className="fas fa-caret-up"></i></a>
+        <div className="lines">
+            {lines.segments.map((line, i) => {
+                return <div
+                    key={`line${i}`}
+                    style={{
+                        top:    `${(i * 12)}rem`,
+                        height: `${line.end}rem`,
+                    }}
+                    className="center-line"/>
+            })}
         </div>
         <Col>
-            {props.data.reverse().map((exp, i) => {
+            {props.data.map((exp, i) => {
                 return <Row key={`exp-${i}`} className={"exp-row"}>
                     <Card className={"exp-card"}>
                         <Col>
