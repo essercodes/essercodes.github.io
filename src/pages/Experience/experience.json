@@ -4,7 +4,10 @@
     "what": "Bachelor of Science – Computer Science and Data Science",
     "where": "Madison WI",
     "start": "Jan 2021",
-    "end": "May 2024"
+    "end": "May 2024",
+    "meta": {
+
+    }
   },
   {
     "title": "Union Cab of Madison Cooperative",

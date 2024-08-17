@@ -4,13 +4,14 @@
 }
 
 .timeline .lines {
-    position: absolute;
-    display:  flex;
-    width:    4rem;
-    left:     50%;
-    transform: translateX(-2rem);
-    top:      1rem;
-    bottom:   0rem;
+    position:        absolute;
+    display:         flex;
+    width:           4rem;
+    left:            50%;
+    transform:       translateX(2rem);
+    rotate:         180deg;
+    top:             1rem;
+    bottom:          6rem;
     justify-content: center;
 }
 
@@ -18,14 +19,15 @@
     width:      .3rem;
     background: var(--bg2);
     position:   relative;
+    top: 1rem;
 }
 
 .timeline .exp-card {
     background: var(--bg1);
     color:      var(--fg1);
-    height:     11rem;
+    height:     10rem;
     padding:    1rem 2rem;
-    margin-top: 1rem;
+    margin:     1rem 0;
     flex:       0 0 auto;
     width:      45%;
 }
@@ -45,7 +47,7 @@
 @media (max-width: 768px) {
 
     .timeline .lines {
-        left: 0rem;
+        left:            0rem;
         justify-content: end;
     }
 

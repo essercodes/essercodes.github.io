@@ -16,7 +16,7 @@ function Timeline(props) {
             }));
             const newLength = newSegments.length * 12;
             return {
-                segments: newSegments,
+                segments: newSegments.reverse(),
                 length: newLength,
             };
         });
@@ -28,7 +28,7 @@ function Timeline(props) {
                 return <div
                     key={`line${i}`}
                     style={{
-                        top:    `${(i * 12)}rem`,
+                        top:    `${i * 12}rem`,
                         height: `${line.end}rem`,
                     }}
                     className="center-line"/>
