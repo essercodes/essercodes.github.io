@@ -6,7 +6,7 @@
 .timeline .lines {
     position:        absolute;
     display:         grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     left:            50%;
     transform:       translateX(1rem);
     rotate:         180deg;

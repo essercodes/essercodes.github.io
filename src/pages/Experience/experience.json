@@ -6,7 +6,8 @@
     "start": "Jan 2021",
     "end": "May 2024",
     "meta": {
-        "length": 10
+        "length": 5,
+        "color": "var(--red-pri)"
     }
   },
   {
@@ -16,7 +17,8 @@
     "start": "Sep 2018",
     "end": "Aug 2020",
     "meta": {
-        "length": 10
+        "length": 10,
+        "color": "var(--green-pri)"
     }
   },
   {
@@ -26,7 +28,8 @@
     "start": "Jan 2016",
     "end": "Current",
     "meta": {
-        "length": 30
+        "length": 29,
+        "color": "var(--aqua-pri)"
     }
   },
   {
@@ -36,7 +39,8 @@
     "start": "Mar 2013",
     "end": "Jan 2016",
     "meta": {
-        "length": 12
+        "length": 12,
+        "color": "var(--yellow-pri)"
     }
   }
 ]

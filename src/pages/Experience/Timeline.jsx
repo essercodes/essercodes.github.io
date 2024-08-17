@@ -13,6 +13,7 @@ function Timeline(props) {
             const newSegments = props.data.map((exp, i) => ({
                 start: i,
                 length: exp.meta.length,
+                color: exp.meta.color,
             }));
             const newLength = newSegments.length * 12;
             return {
@@ -30,6 +31,7 @@ function Timeline(props) {
                     style={{
                         top:    `${i * 12}rem`,
                         height: `${line.length}rem`,
+                        background:  line.color,
                     }}
                     className="center-line"/>
             })}
