@@ -6,7 +6,7 @@
     "start": "Jan 2021",
     "end": "May 2024",
     "meta": {
-
+        "length": 10
     }
   },
   {
@@ -14,20 +14,29 @@
     "what": "Board of Directors",
     "where": "Madison WI",
     "start": "Sep 2018",
-    "end": "Aug 2020"
+    "end": "Aug 2020",
+    "meta": {
+        "length": 10
+    }
   },
   {
     "title": "Union Cab of Madison Cooperative",
     "what": "Information Technology Manager",
     "where": "Madison WI",
     "start": "Jan 2016",
-    "end": "Current"
+    "end": "Current",
+    "meta": {
+        "length": 30
+    }
   },
   {
     "title": "Union Cab of Madison Cooperative",
     "what": "Information Technology Technical Support",
     "where": "Madison WI",
     "start": "Mar 2013",
-    "end": "Jan 2016"
+    "end": "Jan 2016",
+    "meta": {
+        "length": 12
+    }
   }
 ]

@@ -5,10 +5,10 @@
 
 .timeline .lines {
     position:        absolute;
-    display:         flex;
-    width:           4rem;
+    display:         grid;
+    grid-template-columns: 1fr 1fr 1fr;
     left:            50%;
-    transform:       translateX(2rem);
+    transform:       translateX(1rem);
     rotate:         180deg;
     top:             1rem;
     bottom:          6rem;
@@ -16,7 +16,7 @@
 }
 
 .timeline .center-line {
-    width:      .3rem;
+    width:      .5rem;
     background: var(--bg2);
     position:   relative;
     top: 1rem;
