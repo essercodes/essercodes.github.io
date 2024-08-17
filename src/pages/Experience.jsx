@@ -18,12 +18,7 @@ function Experience() {
                 </Button>
             </div>
         </Alert>
-        <Container className={"container-timeline"}>
-            <div className="center-line">
-                <a href="#" className="scroll-icon"><i className="fas fa-caret-up"></i></a>
-            </div>
-            <Timeline data={exp_data}/>
-        </Container>
+        <Timeline data={exp_data}/>
     </Page>
 }
 
