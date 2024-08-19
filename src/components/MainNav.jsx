@@ -30,44 +30,44 @@ function MainNav() {
         });
     }
 
-    return (
-        <div>
-            <Navbar
-                collapseOnSelect
-                expand="md"
-                fixed="top"
-                className={`${theme} fixed-navbar`}
-                variant={theme}
-            >
-                <div className="title d-md-none d-block">
-                    <Letters className="nav-letter" text={compactTitle}/>
-                </div>
-                <div id="center-logo" className="d-md-none d-block mx-auto">
-                    {/*Hidden only on sm*/}
-                    <BulbSvg onClick={themeSwitch} className="logo"/>
-                </div>
-                <Navbar.Brand className="d-none d-md-block d-none">
-                    <Container>
-                        <Row >
-                            {/* Visible only on sm */}
-                            <BulbSvg onClick={themeSwitch} className="logo"/>
-                        </Row>
-                    </Container>
-                </Navbar.Brand>
-                <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav"/>
-                <Navbar.Collapse>
-                    <Nav>
-                        <MyNavLink title="Home" to="/" eventKey="home"/>
-                        <MyNavLink title="About" to="about" eventKey="about"/>
-                        <MyNavLink title="Experience" to="experience" eventKey="xp"/>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-            <div id="main-outlet">
-                <Outlet/>
+    return (<div>
+        <Navbar
+            collapseOnSelect
+            expand="md"
+            fixed="top"
+            className={`${theme} fixed-navbar`}
+            variant={theme}
+        >
+            <div className="title d-md-none d-block">
+                <Letters className="nav-letter" text={compactTitle}/>
             </div>
+            <div id="center-logo" className="d-md-none d-block mx-auto">
+                {/*Hidden only on sm*/}
+                <BulbSvg onClick={themeSwitch} className="logo"/>
+            </div>
+            <Navbar.Brand className="d-none d-md-block d-none">
+                <Container>
+                    <Row>
+                        {/* Visible only on sm */}
+                        <BulbSvg onClick={themeSwitch} className="logo"/>
+                    </Row>
+                </Container>
+            </Navbar.Brand>
+            <Navbar.Toggle className="navbar-toggler"
+                           aria-controls="responsive-navbar-nav"/>
+            <Navbar.Collapse>
+                <Nav>
+                    <MyNavLink title="Home" to={"/"} eventKey="home"/>
+                    <MyNavLink title="About" to={"about"} eventKey="about"/>
+                    <MyNavLink title="Experience" to={"experience"}
+                               eventKey="xp"/>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+        <div id="main-outlet">
+            <Outlet/>
         </div>
-    )
+    </div>)
 }
 
 export default MainNav;

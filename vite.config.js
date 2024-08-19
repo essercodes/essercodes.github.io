@@ -7,11 +7,8 @@ export default defineConfig({
     base: "/",
     plugins: [
         react(),
-        svgr({
-            svgrOptions: {
-                // svgr options
-            },
-        }),
+        svgr(),
     ],
+    assetsInclude: ['**/*.md'],
 })
 
