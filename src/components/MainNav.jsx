@@ -58,9 +58,11 @@ function MainNav() {
             <Navbar.Collapse>
                 <Nav>
                     <MyNavLink title="Home" to={"/"} eventKey="home"/>
+{/*
                     <MyNavLink title="About" to={"about"} eventKey="about"/>
                     <MyNavLink title="Experience" to={"experience"}
                                eventKey="xp"/>
+*/}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
